@@ -37,41 +37,41 @@ Questi report constanti permetteranno un controllo continuativo dello sviluppo d
 
 ## 6 Rischi
 Nel contesto della creazione della nostra app sull'alimentazione, ci sono diversi rischi potenziali che è importante considerare e gestire. Alcuni dei rischi comuni associati a questo tipo di progetto possono essere:
-### 1. Comprensione Inadeguata dei Requisiti:
-* Rischio: Una comprensione incompleta o errata dei requisiti potrebbe portare a sviluppare una soluzione che non soddisfa le necessità degli utenti.
+### 6.1. Comprensione Inadeguata dei Requisiti:
+* **Rischio**: Una comprensione incompleta o errata dei requisiti potrebbe portare a sviluppare una soluzione che non soddisfa le necessità degli utenti.
 - Mitigazione: Eseguire una dettagliata analisi dei requisiti con il coinvolgimento degli stakeholder e del Product Owner. Assicurarsi di avere una chiara visione degli obiettivi e delle aspettative.
 
-### 2. Difficoltà nell'Accesso alle Informazioni Nutrizionali:
-* Rischio: L'incapacità di accedere a un database accurato e aggiornato di informazioni nutrizionali potrebbe influire sulla qualità delle funzionalità dell'app.
+### 6.2. Difficoltà nell'Accesso alle Informazioni Nutrizionali:
+* **Rischio**: L'incapacità di accedere a un database accurato e aggiornato di informazioni nutrizionali potrebbe influire sulla qualità delle funzionalità dell'app.
 - Mitigazione: Creare database nutrizionali i più completi possibile e dare la possibilità all'utente di inserire alimenti non presenti precendentemente. Prevedere un piano di backup nel caso in cui le risorse principali non siano disponibili.
 
-### 3. Privacy e Sicurezza dei Dati:
-* Rischio: La gestione inadeguata dei dati personali degli utenti potrebbe compromettere la privacy e la sicurezza delle informazioni.
+### 6.3. Privacy e Sicurezza dei Dati:
+* **Rischio**: La gestione inadeguata dei dati personali degli utenti potrebbe compromettere la privacy e la sicurezza delle informazioni.
 - Mitigazione: Implementare pratiche di sicurezza robuste, come crittografia dei dati, autenticazione sicura e gestione delle autorizzazioni. Rispettare le normative sulla privacy dei dati, come il GDPR (Regolamento generale sulla protezione dei dati).
 
-### 4. Complessità Tecnologica:
-* Rischio: L'adozione di tecnologie complesse o nuove potrebbe portare a ritardi nello sviluppo o a difficoltà di implementazione.
+### 6.4. Complessità Tecnologica:
+* **Rischio**: L'adozione di tecnologie complesse o nuove potrebbe portare a ritardi nello sviluppo o a difficoltà di implementazione.
 - Mitigazione: Condurre una valutazione approfondita delle tecnologie prima di adottarle. Assicurarsi che il team abbia le competenze necessarie o pianificare la formazione adeguata.
 
-### 5. Resistenze al Cambiamento:
-* Rischio: La resistenza da parte degli utenti o del team alla nuova app o ai cambiamenti nelle abitudini alimentari potrebbe influire sulla sua adozione.
+### 6.5. Resistenze al Cambiamento:
+* **Rischio**: La resistenza da parte degli utenti o del team alla nuova app o ai cambiamenti nelle abitudini alimentari potrebbe influire sulla sua adozione.
 - Mitigazione: Coinvolgere gli utenti fin dalle fasi iniziali del progetto, raccogliendo feedback e adattando il design alle loro esigenze. Fornire informazioni chiare sulle funzionalità e i benefici dell'app.
 
-### 6. Difficoltà nella Collaborazione di Gruppo:
-* Rischio: Problemi di comunicazione, mancanza di collaborazione o divergenze tra i membri del team potrebbero rallentare lo sviluppo.
+### 6.6. Difficoltà nella Collaborazione di Gruppo:
+* **Rischio**: Problemi di comunicazione, mancanza di collaborazione o divergenze tra i membri del team potrebbero rallentare lo sviluppo.
 - Mitigazione: Implementare processi di comunicazione chiari, assegnazione di ruoli e responsabilità in modo trasparente, e affrontare tempestivamente eventuali conflitti. Partecipare a sessioni di team building.
 
-### 7. Vincoli di Tempo e Scadenze:
-* Rischio: Ritardi nello sviluppo dovuti a scadenze strette o cambiamenti nei tempi previsti.
+### 6.7. Vincoli di Tempo e Scadenze:
+* **Rischio**: Ritardi nello sviluppo dovuti a scadenze strette o cambiamenti nei tempi previsti.
 - Mitigazione: Pianificare realisticamente, definire milestone chiare e monitorare costantemente il progresso. Prevedere una certa flessibilità nel piano di progetto per gestire eventuali imprevisti.
 
-### 8. Risposta al Feedback degli Utenti:
-* Rischio: Una risposta lenta o inadeguata al feedback degli utenti potrebbe influire sulla reputazione e sull'adozione dell'app.
+### 6.8. Risposta al Feedback degli Utenti:
+* **Rischio**: Una risposta lenta o inadeguata al feedback degli utenti potrebbe influire sulla reputazione e sull'adozione dell'app.
 - Mitigazione: Implementare un sistema di raccolta e gestione del feedback degli utenti. Rispondere prontamente alle preoccupazioni e pianificare regolari aggiornamenti basati sul feedback.
 
-### 9. Scarsa Adesione alle Buone Pratiche di Sviluppo:
-* Rischio: Ignorare buone pratiche di sviluppo, testing e documentazione potrebbe portare a problemi di qualità e manutenibilità.
-- Mitigazione: Seguire le migliori pratiche di ingegneria del software, incluso il testing regolare, la documentazione chiara e il versionamento del codice.
+### 6.9. Scarsa Adesione alle Buone Pratiche di Sviluppo:
+* **Rischio**: Ignorare buone pratiche di sviluppo, testing e documentazione potrebbe portare a problemi di qualità e manutenibilità.
+- *Mitigazione*: Seguire le migliori pratiche di ingegneria del software, incluso il testing regolare, la documentazione chiara e il versionamento del codice.
 
 È importante identificare e valutare i rischi, sviluppare piani di mitigazione e monitorare costantemente il loro impatto durante il ciclo di vita del progetto.
 

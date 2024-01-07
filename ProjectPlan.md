@@ -11,7 +11,8 @@ TrackMe ha dunque 3 funzionalità principali:
 3. Fornire un registro dei progressi nel tempo, mostrando grafici e statistiche 
 
 ## 2 Metodo di processo
-Il metodo di processo agile selezionato per sviluppare il progetto è il framework Scrum. Il ruolo **Scrum Master** viene ricoperto da ciascun membro del team a rotazione per permetterci di apprenderne meglio la mansione. La compilazione del **Product Backlog**, dello **Sprint Backlog** e delle fasi successive viene gestita attraverso lo strumento *Projects* di **GitHub**.
+Per lo sviluppo del progetto, abbiamo adottato il framework **Scrum** come metodo di processo agile. In questa metodologia, il ruolo di **Scrum Master** viene ricoperto da ciascun membro del team a rotazione. Questa pratica è stata implementata con l'obiettivo di permettere ad ogni membro del team di acquisire una comprensione approfondita della mansione di Scrum Master e di favorire una distribuzione equa delle responsabilità.
+La gestione delle attività, inclusa la compilazione del **Product Backlog**, dello **Sprint Backlog** e delle fasi successive, è affidata allo strumento *Projects* di **GitHub**. Questo strumento fornisce una piattaforma integrata per la pianificazione, l'organizzazione e il monitoraggio delle attività, semplificando il processo di gestione del progetto all'interno di un ambiente collaborativo.
 
 ## 3 Organizzazione del processo
 Ogni membro del gruppo partecipa attivamente agli incontri dedicati a discutere sull'avanzamento del progetto, contribuendo con proposte per migliorare ed arricchire l'idea iniziale. 

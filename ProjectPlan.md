@@ -4,7 +4,7 @@
 ### 1.1 Cos'è TrackMe?
 TrackMe è una piattaforma progettata per semplificare il monitoraggio e la gestione dell'alimentazione quotidiana. Questo strumento consente agli utenti di registrare con facilità i dettagli dei loro pasti, inclusi i macronutrienti come proteine, carboidrati e grassi, insieme al conteggio delle relative calorie. L'obiettivo è quello di offrire una piattaforma accessibile per tenere traccia degli alimenti consumati, consentendo agli utenti di impostare traguardi personalizzati, monitorare l'apporto nutrizionale e valutare il bilancio calorico giornaliero. Con un focus sulla facilità d'uso e sull'accuratezza dei dati, questa app si propone di essere un prezioso alleato per coloro che desiderano adottare abitudini alimentari più consapevoli e mantenere uno stile di vita sano.
 
- ### 1.2 Obiettivi 
+### 1.2 Obiettivi 
 TrackMe ha dunque 3 funzionalità principali:  
 1. Calcolare il fabbisogno calorico giornaliero dell'utente basandosi sulle misure antropometriche fornite da quest'ultimo 
 2. Aggiungere/rimuovere alimenti con i relativi macronutrienti
@@ -36,25 +36,25 @@ Alla fine di ogni sprint, la **sprint review** offre l'opportunità di presentar
 Questo approccio mira a massimizzare il valore del prodotto attraverso una pianificazione flessibile, feedback regolare e miglioramenti continui, garantendo una gestione dinamica e collaborativa del progetto.
 
 ## 4 Standard, linee guida, procedure
-#### 4.1 Linguaggio di programmazione
+### 4.1 Linguaggio di programmazione
 Per lo sviluppo del progetto, adotteremo il linguaggio di programmazione [**Java Oracle**](https://www.oracle.com/java/#:~:text=Oracle%20Java%20is%20the%20%231,innovation%2C%20and%20improves%20application%20services.) al fine di garantire coerenza e qualità nel codice. L'utilizzo di Java Oracle ci offre un ambiente robusto, favorisce l'innovazione e migliora i servizi dell'applicazione.
 
-#### 4.2 Documentazione
+### 4.2 Documentazione
 Per la documentazione seguiremo gli standard [**UML**](https://it.wikipedia.org/wiki/Unified_Modeling_Language/) **(Unified Modeling Language)**. Questo garantirà una rappresentazione chiara e standardizzata del sistema, utilizzando diagrammi UML per modellare requisiti, progettazione e strutture di dati. Tale approccio favorirà una comprensione accurata e coesa del sistema.
 
-#### 4.3 Pubblicazione della Documentazione
+### 4.3 Pubblicazione della Documentazione
 Al raggiungimento della prima release del software, sarà pubblicata la documentazione corrispondente. Per garantire il costante aggiornamento della documentazione, ogni nuova versione del software sarà accompagnata da una nuova documentazione, includendo eventuali nuove specifiche.
 
-#### 4.4 Ambiente di sviluppo
+### 4.4 Ambiente di sviluppo
 All'interno delle linee guida del progetto, è specificato che l'implementazione completa del sistema deve avvenire esclusivamente all'interno dell'IDE di **Eclipse**, senza l'utilizzo di servizi esterni. Questa direttiva è stata introdotta per garantire uniformità nell'ambiente di sviluppo e semplificare l'integrazione del codice nel contesto dell'IDE di riferimento. Limitare l'uso di servizi esterni contribuirà a semplificare la gestione del progetto e a mantenere il controllo completo sull'intero processo di sviluppo.
 
 ## 5 Attività di gestione
 La gestione delle attività è fondamentale per sovrintendere e regolare tutti gli elementi creati durante lo sviluppo del progetto. Per quanto riguarda le attività di gestione ordinaria:
 
-#### 5.1 Comunicazione delle Modifiche:
+### 5.1 Comunicazione delle Modifiche:
 Ogni qualvolta un membro apporta una modifica, si impegnerà a notificare tempestivamente gli altri componenti del gruppo. Questo assicura che tutti siano costantemente informati sul progresso del progetto e sulle eventuali modifiche apportate.
 
-#### 5.2 Sprint Review al Termine di Ogni Sprint:
+### 5.2 Sprint Review al Termine di Ogni Sprint:
 Alla conclusione di ciascuno sprint, si terrà una **sprint review** dedicata alla verifica e validazione dei progressi raggiunti. Questa pratica permette di esaminare i risultati ottenuti e di valutare la conformità agli obiettivi prefissati.
 
 L'implementazione di queste procedure costanti garantirà un controllo continuo sullo sviluppo del progetto, facilitando la trasparenza e la collaborazione all'interno del team. 
@@ -169,50 +169,51 @@ Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualit
 Implementare un sistema di gestione della qualità solido richiede un impegno continuo da parte del team e una cultura organizzativa incentrata sulla qualità e sul miglioramento continuo.
 
 ## 10 Risorse
-#### 10.1 Strumenti
-##### 10.1.1 Server Java:
+### 10.1 Strumenti
+#### 10.1.1 Server Java:
 Costruiremo e utilizzeremo un server implementato in Java per supportare le funzionalità del progetto. Questo server svolgerà un ruolo chiave nel gestire le operazioni di backend e nel fornire i servizi richiesti.
 
-##### 10.1.2 Applicativo Java:
+#### 10.1.2 Applicativo Java:
 Utilizzeremo un'applicazione Java come parte centrale del nostro progetto. Questa componente sarà responsabile di fornire l'interfaccia utente, gestire la logica dell'applicazione e comunicare con il server per il trattamento dei dati.
 
-##### 10.1.3 Piattaforma di hosting GitHub
+#### 10.1.3 Piattaforma di hosting GitHub
 Utilizzeremo GitHub come piattaforma di hosting. Fornirà un ambiente centralizzato per la condivisione del codice, la gestione delle versioni e la collaborazione tra i membri del team.
 
-##### 10.1.4 Ambiente di Sviluppo Integrato (IDE):
+#### 10.1.4 Ambiente di Sviluppo Integrato (IDE):
 **Eclipse**: L'IDE Eclipse sarà la nostra piattaforma di sviluppo principale. Offre un ambiente integrato per la scrittura del codice, la gestione del progetto e la facilitazione dello sviluppo Java.
 
-##### 10.1.5 Strumenti per l'Intelligenza Artificiale:
+#### 10.1.5 Strumenti per l'Intelligenza Artificiale:
 [Inserire qui eventuali strumenti specifici] 
 
-##### 10.1.6 Database:
+#### 10.1.6 Database:
 [Inserire qui il tipo di database]
 
 ### 10.2 Risorse umane
-##### 10.2.1. Sviluppatori (Team di Sviluppo):
+#### 10.2.1 Sviluppatori (Team di Sviluppo):
 * Ruoli: Tutti i membri del  team.
 - Descrizione: Questo team è responsabile dello sviluppo effettivo dell'app sull'alimentazione. Ogni membro del team può contribuire a diversi aspetti dello sviluppo, come il front-end, il back-end, la gestione del database, ecc.
-##### 10.2.2. Product Owner:
+
+#### 10.2.2 Product Owner:
 * Ruoli: a rotazione.
 - Descrizione: Responsabile di definire e gestire il backlog del prodotto, stabilendo le priorità e rappresentando le esigenze degli utenti.
-
-##### 10.2.3. Scrum Master:
+  
+#### 10.2.3 Scrum Master:
 * Ruoli: a rotazione.
 - Descrizione: Responsabile di facilitare il processo Scrum, rimuovere gli ostacoli, promuovere la trasparenza e garantire che il team segua le pratiche Scrum.
 
-##### 10.2.4. Utenti Beta/Testers:
+#### 10.2.4 Utenti Beta/Testers:
 * Ruoli: Tutti i membri del team, con coinvolgimento potenziale di altre persone (amici, familiari) per i test beta.
 - Descrizione: Partecipano alla fase di test per fornire feedback sull'usabilità e identificare eventuali problemi o miglioramenti necessari.
 
-#### 10.2.5. Responsabile del Controllo Qualità:
+#### 10.2.5 Responsabile del Controllo Qualità:
 * Ruoli: a rotazione.
 - Descrizione: Supervisiona le attività di controllo qualità, assicurando che il prodotto soddisfi gli standard di qualità stabiliti.
 
-##### 10.2.6. Coinvolgimento del professore:
+#### 10.2.6 Coinvolgimento del professore:
 * Ruoli: professore.
 - Descrizione: Il professore fornisce la supervisione finale, verifica l'aderenza alle linee guida didattiche, offre consigli e valuta il lavoro svolto dal team.
 - 
-Questa struttura semplificata riflette il fatto che siamo noi membri del team gli attori principali nello sviluppo dell'app, ma è importante includere il coinvolgimento del professore come figura di guida e verifica. Il nostro obiettivo è di comunicare chiaramente le nostre responsabilità e progressi al professore durante le revisioni periodiche.
+  esta struttura semplificata riflette il fatto che siamo noi membri del team gli attori principali nello sviluppo dell'app, ma è importante includere il coinvolgimento del professore come figura di guida e verifica. Il nostro obiettivo è di comunicare chiaramente le nostre responsabilità e progressi al professore durante le revisioni periodiche.
 
 ## 11 Cambiamenti
 Ogni cambiamento sarà attentamente discusso con ogni membro. Essendo una squadra agile l'obiettivo è mantenere una forte comunicazione, permessa dalle comuni app di messagistica e dalle piattaforme disponibili per chiamate e condivisione schermo. 

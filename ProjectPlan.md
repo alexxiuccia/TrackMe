@@ -10,15 +10,15 @@ TrackMe ha dunque 3 funzionalità principali:
 2. Aggiungere/rimuovere alimenti con i relativi macronutrienti
 3. Fornire un registro dei progressi nel tempo, mostrando grafici e statistiche 
 
-## 2 Metodo di Processo
+## 2 Metodo di processo
 Per lo sviluppo del progetto, abbiamo adottato il framework **Scrum** come metodo di processo agile. In questa metodologia, il ruolo di **Scrum Master** viene ricoperto da ciascun membro del team a rotazione. Questa pratica è stata implementata con l'obiettivo di permettere ad ogni membro del team di acquisire una comprensione approfondita della mansione di Scrum Master e di favorire una distribuzione equa delle responsabilità.
 La gestione delle attività, inclusa la compilazione del **Product Backlog**, dello **Sprint Backlog** e delle fasi successive, è affidata allo strumento *Projects* di **GitHub**. Questo strumento fornisce una piattaforma integrata per la pianificazione, l'organizzazione e il monitoraggio delle attività, semplificando il processo di gestione del progetto all'interno di un ambiente collaborativo.
 
-## 3 Organizzazione del Processo
+## 3 Organizzazione del processo
 Ogni membro del gruppo partecipa attivamente agli incontri dedicati a discutere sull'avanzamento del progetto, contribuendo con proposte per migliorare ed arricchire l'idea iniziale. 
 L'utilizzo di **GitHub** è fondamentale in questo contesto, fungendo da strumento principale per la condivisione del codice, la gestione delle versioni e le richieste di modifica, oltre che per la gestione della documentazione.
 
-### Modello Scrum per la fase di Sviluppo
+### Modello Scrum per la fase di sviluppo
 Per la fase di sviluppo, adotteremo il modello Scrum, un approccio agile che favorisce una collaborazione dinamica all'interno del team. Le caratteristiche principali di questo framework includono:
 
 #### 3.1 Cicli Iterativi e Incrementali (Sprint):
@@ -35,19 +35,19 @@ Alla fine di ogni sprint, la **sprint review** offre l'opportunità di presentar
 Questo approccio mira a massimizzare il valore del prodotto attraverso una pianificazione flessibile, feedback regolare e miglioramenti continui, garantendo una gestione dinamica e collaborativa del progetto.
 
 ## 4 Standard, linee guida, procedure
-### 4.1 Linguaggio di Programmazione
+### 4.1 Linguaggio di programmazione
 Per lo sviluppo del progetto, adotteremo il linguaggio di programmazione [**Java Oracle**](https://www.oracle.com/java/#:~:text=Oracle%20Java%20is%20the%20%231,innovation%2C%20and%20improves%20application%20services.) al fine di garantire coerenza e qualità nel codice. L'utilizzo di Java Oracle ci offre un ambiente robusto, favorisce l'innovazione e migliora i servizi dell'applicazione.
 
 ### 4.2 Documentazione
 Per la documentazione seguiremo gli standard [**UML**](https://it.wikipedia.org/wiki/Unified_Modeling_Language/) **(Unified Modeling Language)**. Questo garantirà una rappresentazione chiara e standardizzata del sistema, utilizzando diagrammi UML per modellare requisiti, progettazione e strutture di dati. Tale approccio favorirà una comprensione accurata e coesa del sistema.
 
-### 4.3 Pubblicazione della Documentazione
+### 4.3 Pubblicazione della documentazione
 Al raggiungimento della prima release del software, sarà pubblicata la documentazione corrispondente. Per garantire il costante aggiornamento della documentazione, ogni nuova versione del software sarà accompagnata da una nuova documentazione, includendo eventuali nuove specifiche.
 
-### 4.4 Ambiente di Sviluppo
+### 4.4 Ambiente di sviluppo
 All'interno delle linee guida del progetto, è specificato che l'implementazione completa del sistema deve avvenire esclusivamente all'interno dell'IDE di **Eclipse**, senza l'utilizzo di servizi esterni. Questa direttiva è stata introdotta per garantire uniformità nell'ambiente di sviluppo e semplificare l'integrazione del codice nel contesto dell'IDE di riferimento. Limitare l'uso di servizi esterni contribuirà a semplificare la gestione del progetto e a mantenere il controllo completo sull'intero processo di sviluppo.
 
-## 5 Attività di Gestione
+## 5 Attività di gestione
 La gestione delle attività è fondamentale per sovrintendere e regolare tutti gli elementi creati durante lo sviluppo del progetto. Per quanto riguarda le attività di gestione ordinaria:
 
 ### 5.1 Comunicazione delle modifiche:
@@ -60,31 +60,31 @@ La comunicazione regolare delle modifiche e le sprint review periodiche contribu
 
 ## 6 Rischi
 Nel contesto della creazione della nostra app sull'alimentazione, ci sono diversi rischi potenziali che è importante considerare e gestire. Alcuni dei rischi comuni associati a questo tipo di progetto possono essere:    
-#### 6.1 Comprensione Inadeguata dei Requisiti: 
+#### 6.1 Comprensione inadeguata dei requisiti: 
 * **Rischio**: una comprensione incompleta o errata dei requisiti potrebbe portare a sviluppare una soluzione che non soddisfa le necessità degli utenti.
 - *Mitigazione*: eseguire una dettagliata analisi dei requisiti con il coinvolgimento degli stakeholder e del Product Owner. Assicurarsi di avere una chiara visione degli obiettivi e delle aspettative.
 
-#### 6.2 Difficoltà nell'accesso alle Informazioni Nutrizionali:
+#### 6.2 Difficoltà nell'accesso alle informazioni nutrizionali:
 * **Rischio**: l'incapacità di accedere a un database accurato e aggiornato di informazioni nutrizionali potrebbe influire sulla qualità delle funzionalità dell'app.
 - *Mitigazione* : creare database nutrizionali i più completi possibile e dare la possibilità all'utente di inserire alimenti non presenti precendentemente. Prevedere un piano di backup nel caso in cui le risorse principali non siano disponibili.
 
-#### 6.3 Privacy e sicurezza dei Dati:
+#### 6.3 Privacy e sicurezza dei dati:
 * **Rischio**: la gestione inadeguata dei dati personali degli utenti potrebbe compromettere la privacy e la sicurezza delle informazioni.
 - *Mitigazione*: implementare pratiche di sicurezza robuste, come crittografia dei dati, autenticazione sicura e gestione delle autorizzazioni. Rispettare le normative sulla privacy dei dati, come il GDPR (Regolamento generale sulla protezione dei dati).
 
-#### 6.4 Complessità Tecnologica:
+#### 6.4 Complessità tecnologica:
 * **Rischio**: l'adozione di tecnologie complesse o nuove potrebbe portare a ritardi nello sviluppo o a difficoltà di implementazione.
 - *Mitigazione*: condurre una valutazione approfondita delle tecnologie prima di adottarle. Assicurarsi che il team abbia le competenze necessarie o pianificare la formazione adeguata.
 
-#### 6.5 Resistenze al Cambiamento:
+#### 6.5 Resistenze al cambiamento:
 * **Rischio**: la resistenza da parte degli utenti o del team alla nuova app o ai cambiamenti nelle abitudini alimentari potrebbe influire sulla sua adozione.
 - *Mitigazione*: coinvolgere gli utenti fin dalle fasi iniziali del progetto, raccogliendo feedback e adattando il design alle loro esigenze. Fornire informazioni chiare sulle funzionalità e i benefici dell'app.
 
-#### 6.6 Difficoltà nella collaborazione di Gruppo:
+#### 6.6 Difficoltà nella collaborazione di gruppo:
 * **Rischio**: problemi di comunicazione, mancanza di collaborazione o divergenze tra i membri del team potrebbero rallentare lo sviluppo.
 - *Mitigazione*: implementare processi di comunicazione chiari, assegnazione di ruoli e responsabilità in modo trasparente, e affrontare tempestivamente eventuali conflitti. Partecipare a sessioni di team building.
 
-#### 6.7 Vincoli di Tempo e Scadenze:
+#### 6.7 Vincoli di tempo e scadenze:
 * **Rischio**: ritardi nello sviluppo dovuti a scadenze strette o cambiamenti nei tempi previsti.
 - *Mitigazione*: pianificare realisticamente, definire milestone chiare e monitorare costantemente il progresso. Prevedere una certa flessibilità nel piano di progetto per gestire eventuali imprevisti.
 
@@ -92,7 +92,7 @@ Nel contesto della creazione della nostra app sull'alimentazione, ci sono divers
 * **Rischio**: una risposta lenta o inadeguata al feedback degli utenti potrebbe influire sulla reputazione e sull'adozione dell'app.
 - *Mitigazione*: implementare un sistema di raccolta e gestione dei feedback degli utenti. Rispondere prontamente alle preoccupazioni e pianificare regolari aggiornamenti basati sul feedback.
 
-#### 6.9 Scarsa adesione alle buone pratiche di Sviluppo:  
+#### 6.9 Scarsa adesione alle buone pratiche di sviluppo:  
 * **Rischio**: ignorare buone pratiche di sviluppo, testing e documentazione potrebbe portare a problemi di qualità e manutenibilità.
 - *Mitigazione*: seguire le migliori pratiche di ingegneria del software, incluso il testing regolare, la documentazione chiara e il versionamento del codice.
 È importante identificare e valutare i rischi, sviluppare piani di mitigazione e monitorare costantemente il loro impatto durante il ciclo di vita del progetto.
@@ -109,33 +109,33 @@ Ogni ruolo verrà ricoperto a rotazione da tutti i membri del team. Questa prati
 ## 8 Metodi e tecniche
 Al fine di ottenere una panoramica esaustiva sulle funzionalità del progetto, impiegheremo i **diagrammi UML** come principale strumento di modellazione. Le seguenti tecniche saranno utilizzate per definire in modo chiaro e dettagliato la struttura e il comportamento del sistema:
 
-#### 8.1 Diagramma dei Casi d'Uso (Use Case Diagram):
+#### 8.1 Diagramma dei casi d'uso (Use Case Diagram):
 Identificheremo i vari **casi d'uso** e gli **attori** coinvolti nel sistema attraverso l'uso del *diagramma dei casi d'uso*. Questo ci consentirà di rappresentare in modo visuale le interazioni tra gli attori e le funzionalità offerte dal sistema.
 
-#### 8.2 Diagramma delle Classi (Class Diagram):
+#### 8.2 Diagramma delle classi (Class Diagram):
 La modellazione delle **classi** e delle **relazioni** tra di esse sarà realizzata attraverso il *diagramma delle classi*. Questo ci permetterà di identificare gli attributi e i metodi associati a ciascuna classe, fornendo una rappresentazione chiara della struttura del sistema.
 
-#### 8.3 Diagramma di Sequenza (Sequence Diagram):
+#### 8.3 Diagramma di sequenza (Sequence Diagram):
 Per visualizzare la **sequenza temporale** delle **operazioni** e delle **interazioni** tra le classi, utilizzeremo il *diagramma di sequenza UML*. Questo ci consentirà di delineare l'ordine di esecuzione delle operazioni e di comprendere la dinamica delle comunicazioni tra le varie parti del sistema.
 
-#### 8.4 Diagramma delle Classi per il Database (ER Class Diagram):
+#### 8.4 Diagramma delle classi per il database (ER Class Diagram)
 Per modellare in modo efficace i **dati da archiviare** nel nostro **database**, adotteremo il *diagramma delle classi per il database*. Questo ci permetterà di definire le tabelle da memorizzare e di specificare le relazioni con le relative cardinalità.
 L'utilizzo combinato di questi diagrammi UML garantirà una rappresentazione completa e dettagliata del progetto, facilitando la comprensione delle dinamiche del sistema da parte di tutti gli stakeholder coinvolti nel processo di sviluppo.
 
-## 9 Garanzia di Qualità
+## 9 Garanzia di qualità
 Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualità dichiarati, è essenziale implementare un'organizzazione e procedure robuste. Alcuni aspetti chiave che dovremo considerare:
 
-#### 9.1. Pianificazione della Qualità:
+#### 9.1. Pianificazione della qualità:
 * Definizione degli Obiettivi di Qualità: stabilire chiaramente gli obiettivi di qualità che il software deve raggiungere. Questi obiettivi dovrebbero essere in linea con le aspettative degli utenti e gli standard del settore.
 
 * Pianificazione del Controllo Qualità: integrare attività di controllo qualità durante tutto il ciclo di vita del progetto, con focus specifici su revisioni del codice, test e validazione.
 
-#### 9.2. Gestione della Configurazione:
+#### 9.2. Gestione della configurazione:
 * Controllo delle Versioni: utilizzeremo Github che, grazie alla cronologia, garantisce che ogni versione del software possa essere recuperata e riprodotta.
 
 * Gestione delle modifiche: stabilire procedure chiare per la gestione delle modifiche, con revisioni e approvazioni per garantire che solo modifiche autorizzate vengano implementate.
 
-#### 9.3. Revisione del Codice:
+#### 9.3. Revisione del codice:
 * Revisioni regolari: programmare revisioni del codice regolari con la partecipazione dei membri del team. Queste revisioni aiutano a identificare errori, migliorare la qualità del codice e diffondere conoscenze tra i membri del team.
 
 * Standard di codifica: definire e applicare degli standard di codifica. Ciò include la formattazione del codice, la nomenclatura delle variabili e altre pratiche che contribuiscono a una base di codice coerente e di alta qualità.
@@ -152,12 +152,12 @@ Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualit
 
 * Documentazione tecnica: preparare documentazione tecnica per utenti e sviluppatori. Questi documenti devono essere aggiornati in modo coerente con il progresso del progetto.
 
-#### 9.6. Collaborazione e Comunicazione:
+#### 9.6. Collaborazione e comunicazione:
 * Comunicazione Trasparente: mantenere una comunicazione trasparente all'interno del team. Fornire aggiornamenti regolari sullo stato del progetto, sui problemi riscontrati e sulle soluzioni implementate.
 
 * Risoluzione Rapida degli Errori: implementare procedure per la segnalazione rapida e la risoluzione degli errori. Assicurare che la squadra risponda prontamente alle segnalazioni di bug.
 
-#### 9.7. Valutazione Continua:
+#### 9.7. Valutazione continua:
 * Retrospettive del Progetto: concludere ogni fase o iterazione con retrospettive per valutare cosa è andato bene, cosa può essere migliorato e quali lezioni possono essere apprese.
 
 * Metriche di Qualità: Utilizzare metriche di qualità, come la copertura dei test, la frequenza degli errori e il tempo di risoluzione, per valutare l'efficacia delle attività di sviluppo.
@@ -200,7 +200,7 @@ Utilizzeremo GitHub come piattaforma di hosting. Fornirà un ambiente centralizz
 * Ruoli: tutti i membri del team, con coinvolgimento potenziale di altre persone (amici, familiari) per i test beta.
 - Descrizione: partecipano alla fase di test per fornire feedback sull'usabilità e identificare eventuali problemi o miglioramenti necessari.
 
-#### 10.2.5 Responsabile del controllo Qualità:
+#### 10.2.5 Responsabile del controllo qualità:
 * Ruoli: a rotazione.
 - Descrizione: supervisiona le attività di controllo qualità, assicurando che il prodotto soddisfi gli standard di qualità stabiliti.
 

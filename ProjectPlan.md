@@ -90,22 +90,87 @@ Il ruolo di Scrum Master verrà ricoperto a rotazione per permettere a tutti i m
 Per avere una visione più ampia sulle funzionalità del progetto useremo dei diagrammi UML. Dovremo identificare i **casi d'uso** e gli **attori** da inserire nello **USE CASE DIAGRAM**. La modellazione delle classi e la comunicazione tra di esse verrà implementata grazie al **UML CLASS DIAGRAM**, che ci permetterà di identificare attributi e metodi da inserire nelle classi. Inoltre,  essendo che ogni operazione può essere vista come un insieme di messaggi che vengono scambiati tra classi, useremo il **SEQUENCE DIAGRAM** che, fornendoci una modellazione sequenziale, riuscirà a dare un ordine di esecuzione ad ogni operazione. Infine, per modellare i dati da salvare nel nostro db, utilizzeremo un **ER CLASS DIAGRAM**, dove definiremo le varie tabelle da memorizzare e le relative relazioni con le specifiche cardinalità.
 
 ## 9 Garanzia di qualità
- 
+Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualità dichiarati, è essenziale implementare un'organizzazione e procedure robuste. Alcuni aspetti chiave che dovremo considerare:
+
+### 9.1. Pianificazione della Qualità:
+* Definizione degli Obiettivi di Qualità: Stabilire chiaramente gli obiettivi di qualità che il software deve raggiungere. Questi obiettivi dovrebbero essere in linea con le aspettative degli utenti e gli standard del settore.
+
+* Pianificazione del Controllo Qualità: Integrare attività di controllo qualità durante tutto il ciclo di vita del progetto, con focus specifici su revisioni del codice, test e validazione.
+
+### 9.2. Gestione della Configurazione:
+* Controllo delle Versioni: Utilizzeremo Github che, grazie alla cronologia, garantisce che ogni versione del software possa essere recuperata e riprodotta.
+
+* Gestione delle modifiche: stabilire procedure chiare per la gestione delle modifiche, con revisioni e approvazioni per garantire che solo modifiche autorizzate vengano implementate.
+
+### 9.3. Revisione del Codice:
+* Revisioni regolari: programmare revisioni del codice regolari con la partecipazione dei membri del team. Queste revisioni aiutano a identificare errori, migliorare la qualità del codice e diffondere conoscenze tra i membri del team.
+
+* Standard di codifica: definire e applicare degli standard di codifica. Ciò include la formattazione del codice, la nomenclatura delle variabili e altre pratiche che contribuiscono a una base di codice coerente e di alta qualità.
+
+### 9.4. Attività di test:
+* Test unitari: ogni componente del software dovrebbe essere accompagnato da test unitari. L'esecuzione automatica di questi test dovrebbe essere integrata nel processo di build.
+
+* Test di Integrazione e Sistema: Effettuare test di integrazione e sistema per assicurare che le diverse parti del software funzionino correttamente insieme e che il sistema soddisfi i requisiti complessivi.
+
+* Test di Accettazione Utente: Coinvolgere gli utenti nella fase di test di accettazione per garantire che il software soddisfi le aspettative degli utilizzatori finali.
+
+### 9.5. Documentazione:
+* Documentazione del Codice: Assicurare che il codice sorgente sia adeguatamente documentato. Ciò include commenti nel codice, ma anche documentazione esterna per facilitare la comprensione e la manutenzione futura.
+
+* Documentazione tecnica: Preparare documentazione tecnica per tuenti e sviluppatori. Questi documenti devono essere aggiornati in modo coerente con il progresso del progetto.
+
+### 9.6. Collaborazione e Comunicazione:
+* Comunicazione Trasparente: Mantienere una comunicazione trasparente all'interno del team. Fornire aggiornamenti regolari sullo stato del progetto, sui problemi riscontrati e sulle soluzioni implementate.
+
+* Risoluzione Rapida degli Errori: Implementare procedure per la segnalazione rapida e la risoluzione degli errori. Assicurare che la squadra risponda prontamente alle segnalazioni di bug.
+
+### 9.7. Valutazione Continua:
+* Retrospettive del Progetto: Concludere ogni fase o iterazione con retrospettive per valutare cosa è andato bene, cosa può essere migliorato e quali lezioni possono essere apprese.
+
+* Metriche di Qualità: Utilizzare metriche di qualità, come la copertura dei test, la frequenza degli errori e il tempo di risoluzione, per valutare l'efficacia delle attività di sviluppo.
+
+Implementare un sistema di gestione della qualità solido richiede un impegno continuo da parte del team e una cultura organizzativa incentrata sulla qualità e sul miglioramento continuo.
 
 ## 10 Risorse
-### 11.1 strumenti
+### 10.1 strumenti
 domanda: dobbiamo mettere il server che costruiremo tramite java? l'applicativo java come lo rappresentiamo?
 Sistemi di controllo: git
 Github per caricare situe 
 IDE eclipse
 Strumenti: intelligenza artificiale
 DB  
-### 11.2 risorse umane
+### 10.2 risorse umane
+#### 10.2.1. Sviluppatori (Team di Sviluppo):
+* Ruoli: Tutti i membri del  team.
+- Descrizione: Questo team è responsabile dello sviluppo effettivo dell'app sull'alimentazione. Ogni membro del team può contribuire a diversi aspetti dello sviluppo, come il front-end, il back-end, la gestione del database, ecc.
+#### 10.2.2. Product Owner:
+* Ruoli: a rotazione.
+- Descrizione: Responsabile di definire e gestire il backlog del prodotto, stabilendo le priorità e rappresentando le esigenze degli utenti.
 
+#### 10.2.3. Scrum Master:
+* Ruoli: a rotazione.
+- Descrizione: Responsabile di facilitare il processo Scrum, rimuovere gli ostacoli, promuovere la trasparenza e garantire che il team segua le pratiche Scrum.
+
+#### 10.2.4. Utenti Beta/Testers:
+* Ruoli: Tutti i membri del team, con coinvolgimento potenziale di altre persone (amici, familiari) per i test beta.
+- Descrizione: Partecipano alla fase di test per fornire feedback sull'usabilità e identificare eventuali problemi o miglioramenti necessari.
+
+#### 10.2.5. Responsabile del Controllo Qualità:
+* Ruoli: a rotazione.
+- Descrizione: Supervisiona le attività di controllo qualità, assicurando che il prodotto soddisfi gli standard di qualità stabiliti.
+
+#### 10.2.6. Coinvolgimento del professore:
+* Ruoli: professore.
+- Descrizione: Il professore fornisce la supervisione finale, verifica l'aderenza alle linee guida didattiche, offre consigli e valuta il lavoro svolto dal team.
+- 
+Questa struttura semplificata riflette il fatto che siamo noi membri del team gli attori principali nello sviluppo dell'app, ma è importante includere il coinvolgimento del professore come figura di guida e verifica. Il nostro obiettivo è di comunicare chiaramente le nostre responsabilità e progressi al professore durante le revisioni periodiche.
 
 ## 11 Cambiamenti
 Ogni cambiamento sarà attentamente discusso con ogni membro. Essendo una squadra agile l'obiettivo è mantenere una forte comunicazione, permessa dalle comuni app di messagistica e dalle piattaforme disponibili per chiamate e condivisione schermo. 
-utili per migliorare applicazione
-
+L'utilizzo di GitHub ci consente di tenere automaticamente traccia di tutte le versioni dei file caricati, offrendo la possibilità di recuperare facilmente versioni precedenti per valutazioni comparative o per apportare modifiche necessarie. 
+L'obiettivo è apportare modifiche significative per migliorare l'applicazione.
+ 
 ## 12 Consegna
-La consegna finale avverrà entro il 15/02/2024, con possibili ultimissime manutenzioni nei giorni appena successivi.
+Entro il 15/01/2024 avverrà la consegna del project plan.
+La data di Consegna Finale è prevista per il 15/02/2024. Potrebbero essere effettuate ultimissime manutenzioni nei giorni immediatamente successivi alla consegna, prima della discussione orale in aula col professore. Questo offre una finestra di flessibilità per apportare modifiche minori o risolvere eventuali problemi dell'ultimo minuto.
+Tutti i file di lavoro vengono caricati volta per volta su GitHub.

@@ -1,4 +1,4 @@
-Abbiamo avuto una riunione per esaminare la precisione e la coerenza del piano del progetto. 
+Abbiamo avuto una riunione per esaminare la precisione e la coerenza del project plan. 
 
 Tutti concordano senza alcun dubbio. 
 

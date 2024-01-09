@@ -32,7 +32,7 @@ I vincoli rappresentano le restrizioni o le limitazioni che influenzeranno lo sv
 Questa sezione indica gli aspetti del progetto che sono basati su presupposti o dipendenze esterne. Ad esempio, potrebbe includere l'assunzione che i dati nutrizionali siano disponibili attraverso specifiche API o che l'applicazione sia compatibile con determinati dispositivi.
 
 ## 3. Requisiti specifici
-### 3.1 Requisiti dell'interfaccia esterna:
+### 3.1 Requisiti dell'interfaccia esterna
 
 ### 3.1.1 Interfacce utente
 Definiremo i requisiti relativi all'aspetto e al comportamento delle interfacce utente dell'applicazione di monitoraggio dell'alimentazione. Questo includerà la disposizione degli elementi, le funzionalità di interazione e la navigazione nell'applicazione.

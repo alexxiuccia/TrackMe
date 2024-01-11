@@ -1,7 +1,8 @@
 # Qualità del software
 ## Introduzione
 Questo documento ha lo scopo di delineare i requisiti di qualità del progetto, con un impegno specifico da parte del team nel rispettare i criteri di qualità tassonomici di McCall. In particolare, vengono seguite le seguenti linee guida per la produzione, la revisione e la transizione del codice.
-  *inserire immagine*
+ 
+   *inserire immagine*
 
 ## 1 Funzionamento
 ### 1.1 Affidabilità
@@ -16,7 +17,8 @@ Il software assicura la sicurezza tramite autenticazione con username e password
 ### 1.4 Usabilità
 L'obiettivo del team è stato creare un'interfaccia grafica semplice e intuitiva per facilitare l'utilizzo dell'applicazione.
 
-### 1.5 Correttezza: Il team si è impegnato a rispettare i requisiti e a sviluppare un software corretto.
+### 1.5 Correttezza
+Il team si è impegnato a rispettare i requisiti e a sviluppare un software corretto.
 
 ## 2 Revisione
 ### 2.1 Manutenibilità

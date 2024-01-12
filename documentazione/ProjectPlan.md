@@ -88,7 +88,7 @@ Nel contesto della creazione della nostra app sull'alimentazione, ci sono divers
 * **Rischio**: ritardi nello sviluppo dovuti a scadenze strette o cambiamenti nei tempi previsti.
 - *Mitigazione*: pianificare realisticamente, definire milestone chiare e monitorare costantemente il progresso. Prevedere una certa flessibilità nel piano di progetto per gestire eventuali imprevisti.
 
-#### 6.8 Risposta al Feedback degli utenti:
+#### 6.8 Risposta al feedback degli utenti:
 * **Rischio**: una risposta lenta o inadeguata al feedback degli utenti potrebbe influire sulla reputazione e sull'adozione dell'app.
 - *Mitigazione*: implementare un sistema di raccolta e gestione dei feedback degli utenti. Rispondere prontamente alle preoccupazioni e pianificare regolari aggiornamenti basati sul feedback.
 
@@ -126,12 +126,12 @@ L'utilizzo combinato di questi diagrammi UML garantirà una rappresentazione com
 Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualità dichiarati, è essenziale implementare un'organizzazione e procedure robuste. Alcuni aspetti chiave che dovremo considerare:
 
 #### 9.1. Pianificazione della qualità:
-* Definizione degli Obiettivi di Qualità: stabilire chiaramente gli obiettivi di qualità che il software deve raggiungere. Questi obiettivi dovrebbero essere in linea con le aspettative degli utenti e gli standard del settore.
+* Definizione degli obiettivi di qualità: stabilire chiaramente gli obiettivi di qualità che il software deve raggiungere. Questi obiettivi dovrebbero essere in linea con le aspettative degli utenti e gli standard del settore.
 
-* Pianificazione del Controllo Qualità: integrare attività di controllo qualità durante tutto il ciclo di vita del progetto, con focus specifici su revisioni del codice, test e validazione.
+* Pianificazione del controllo qualità: integrare attività di controllo qualità durante tutto il ciclo di vita del progetto, con focus specifici su revisioni del codice, test e validazione.
 
 #### 9.2. Gestione della configurazione:
-* Controllo delle Versioni: utilizzeremo Github che, grazie alla cronologia, garantisce che ogni versione del software possa essere recuperata e riprodotta.
+* Controllo delle versioni: utilizzeremo Github che, grazie alla cronologia, garantisce che ogni versione del software possa essere recuperata e riprodotta.
 
 * Gestione delle modifiche: stabilire procedure chiare per la gestione delle modifiche, con revisioni e approvazioni per garantire che solo modifiche autorizzate vengano implementate.
 
@@ -143,24 +143,24 @@ Per garantire che il software in fase di sviluppo soddisfi i requisiti di qualit
 #### 9.4. Attività di test:
 * Test unitari: ogni componente del software dovrebbe essere accompagnato da test unitari. L'esecuzione automatica di questi test dovrebbe essere integrata nel processo di build.
 
-* Test di Integrazione e Sistema: effettuare test di integrazione e sistema per assicurare che le diverse parti del software funzionino correttamente insieme e che il sistema soddisfi i requisiti complessivi.
+* Test di integrazione e sistema: effettuare test di integrazione e sistema per assicurare che le diverse parti del software funzionino correttamente insieme e che il sistema soddisfi i requisiti complessivi.
 
-* Test di Accettazione Utente: coinvolgere gli utenti nella fase di test di accettazione per garantire che il software soddisfi le aspettative degli utilizzatori finali.
+* Test di accettazione utente: coinvolgere gli utenti nella fase di test di accettazione per garantire che il software soddisfi le aspettative degli utilizzatori finali.
 
 #### 9.5. Documentazione:
-* Documentazione del Codice: assicurare che il codice sorgente sia adeguatamente documentato. Ciò include commenti nel codice, ma anche documentazione esterna per facilitare la comprensione e la manutenzione futura.
+* Documentazione del codice: assicurare che il codice sorgente sia adeguatamente documentato. Ciò include commenti nel codice, ma anche documentazione esterna per facilitare la comprensione e la manutenzione futura.
 
 * Documentazione tecnica: preparare documentazione tecnica per utenti e sviluppatori. Questi documenti devono essere aggiornati in modo coerente con il progresso del progetto.
 
 #### 9.6. Collaborazione e comunicazione:
-* Comunicazione Trasparente: mantenere una comunicazione trasparente all'interno del team. Fornire aggiornamenti regolari sullo stato del progetto, sui problemi riscontrati e sulle soluzioni implementate.
+* Comunicazione trasparente: mantenere una comunicazione trasparente all'interno del team. Fornire aggiornamenti regolari sullo stato del progetto, sui problemi riscontrati e sulle soluzioni implementate.
 
-* Risoluzione Rapida degli Errori: implementare procedure per la segnalazione rapida e la risoluzione degli errori. Assicurare che la squadra risponda prontamente alle segnalazioni di bug.
+* Risoluzione rapida degli errori: implementare procedure per la segnalazione rapida e la risoluzione degli errori. Assicurare che la squadra risponda prontamente alle segnalazioni di bug.
 
 #### 9.7. Valutazione continua:
-* Retrospettive del Progetto: concludere ogni fase o iterazione con retrospettive per valutare cosa è andato bene, cosa può essere migliorato e quali lezioni possono essere apprese.
+* Retrospettive del progetto: concludere ogni fase o iterazione con retrospettive per valutare cosa è andato bene, cosa può essere migliorato e quali lezioni possono essere apprese.
 
-* Metriche di Qualità: Utilizzare metriche di qualità, come la copertura dei test, la frequenza degli errori e il tempo di risoluzione, per valutare l'efficacia delle attività di sviluppo.
+* Metriche di qualità: utilizzare metriche di qualità, come la copertura dei test, la frequenza degli errori e il tempo di risoluzione, per valutare l'efficacia delle attività di sviluppo.
 Implementare un sistema di gestione della qualità solido richiede un impegno continuo da parte del team e una cultura organizzativa incentrata sulla qualità e sul miglioramento continuo.
 
 ## 10 Risorse
@@ -174,7 +174,7 @@ Utilizzeremo un'applicazione Java come parte centrale del nostro progetto. Quest
 #### 10.1.3 Piattaforma di hosting GitHub
 Utilizzeremo GitHub come piattaforma di hosting. Fornirà un ambiente centralizzato per la condivisione del codice, la gestione delle versioni e la collaborazione tra i membri del team.
 
-#### 10.1.4 Ambiente di Sviluppo Integrato (IDE):
+#### 10.1.4 Ambiente di sviluppo integrato (IDE):
 **Eclipse**: L'IDE Eclipse sarà la nostra piattaforma di sviluppo principale. Offre un ambiente integrato per la scrittura del codice, la gestione del progetto e la facilitazione dello sviluppo Java.
 
 #### 10.1.5 Strumenti per l'Intelligenza Artificiale:
@@ -196,7 +196,7 @@ Utilizzeremo GitHub come piattaforma di hosting. Fornirà un ambiente centralizz
 * Ruoli: a rotazione.
 - Descrizione: responsabile di facilitare il processo Scrum, rimuovere gli ostacoli, promuovere la trasparenza e garantire che il team segua le pratiche Scrum.
 
-#### 10.2.4 Utenti Beta/Testers:
+#### 10.2.4 Utenti/testers:
 * Ruoli: tutti i membri del team, con coinvolgimento potenziale di altre persone (amici, familiari) per i test beta.
 - Descrizione: partecipano alla fase di test per fornire feedback sull'usabilità e identificare eventuali problemi o miglioramenti necessari.
 

@@ -1,4 +1,5 @@
 Daily Scrum - Riunione del 20/01 (sabato)
+
 Oggetto: Revisione dei progressi e assegnazione compiti per la fase successiva
 
 Durante la riunione di oggi, abbiamo esaminato e aggiornato i progressi dei diagrammi UML relativi ai casi d'uso e alle classi. 

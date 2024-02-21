@@ -1,6 +1,7 @@
 # Architettura
 
-*aggiungere link & immagini*
+![OIG3](https://github.com/alexxiuccia/TrackMe/assets/92911810/350ccb5a-f297-4878-aecf-cf504830a31a)
+
 
 ## 1 Problema
 L'esigenza è quella di definire un'architettura software che gestisca in modo efficiente le funzionalità richieste per un'app di monitoraggio dell'alimentazione. Ciò include la registrazione degli alimenti consumati, la generazione di report nutrizionali, e altre funzionalità connesse.

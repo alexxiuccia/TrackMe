@@ -1,4 +1,6 @@
 # Specifica dei requisiti
+![OIG4](https://github.com/alexxiuccia/TrackMe/assets/92911810/3f735a43-b32e-40f9-9412-8e66df00c683)
+
 ## 1. Introduzione
 ### 1.1 Obiettivo
 L'obiettivo principale di questa sezione è delineare chiaramente ciò che si intende raggiungere con il progetto. Definiremo gli scopi e gli obiettivi che guidano lo sviluppo dell'applicazione.

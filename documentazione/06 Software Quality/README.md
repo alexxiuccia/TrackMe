@@ -1,6 +1,6 @@
 # Qualità del software
 
-![OIG2 qzR](https://github.com/alexxiuccia/TrackMe/assets/92911810/cd0d556a-66d9-408f-bca9-ed6afbb853e3)
+![quality-factor](https://github.com/alexxiuccia/TrackMe/assets/92911810/254bf7c7-ba47-41ef-82c1-a7d1010e9f4e)
 
 ## Introduzione
 Questo documento ha lo scopo di delineare i requisiti di qualità del progetto, con un impegno specifico da parte del team nel rispettare i criteri di qualità tassonomici di McCall. In particolare, vengono seguite le seguenti linee guida per la produzione, la revisione e la transizione del codice.
@@ -43,6 +43,4 @@ Il codice è stato scritto in modo modulare, favorendo il suo riutilizzo in prog
 ### 3.3 Interoperabilità
 L'utilizzo di API e interfacce rende il software interoperabile.
 
-![quality-factor](https://github.com/alexxiuccia/TrackMe/assets/92911810/254bf7c7-ba47-41ef-82c1-a7d1010e9f4e)
-
-
+![OIG2 qzR](https://github.com/alexxiuccia/TrackMe/assets/92911810/cd0d556a-66d9-408f-bca9-ed6afbb853e3)

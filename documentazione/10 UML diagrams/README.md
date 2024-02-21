@@ -9,3 +9,5 @@ In questa cartella vengono inseriti tutti i diagrammi UML utilizzati:
 ### 04 Diagramma di sequenza
 
 ### 05 Diagramma delle attività
+
+![OIG4 (2)](https://github.com/alexxiuccia/TrackMe/assets/92911810/b616e890-aca2-48ce-8525-a3d0fbe6cd5e)

@@ -5,8 +5,12 @@ package it.trackme.jooq.generated;
 
 
 import it.trackme.jooq.generated.tables.Alimento;
+import it.trackme.jooq.generated.tables.Composizionericetta;
+import it.trackme.jooq.generated.tables.Creazionepasto;
 import it.trackme.jooq.generated.tables.Pasto;
+import it.trackme.jooq.generated.tables.Ricetta;
 import it.trackme.jooq.generated.tables.User;
+import it.trackme.jooq.generated.tables.Workout;
 
 
 /**
@@ -21,12 +25,32 @@ public class Tables {
     public static final Alimento ALIMENTO = Alimento.ALIMENTO;
 
     /**
+     * The table <code>composizioneRicetta</code>.
+     */
+    public static final Composizionericetta COMPOSIZIONERICETTA = Composizionericetta.COMPOSIZIONERICETTA;
+
+    /**
+     * The table <code>creazionePasto</code>.
+     */
+    public static final Creazionepasto CREAZIONEPASTO = Creazionepasto.CREAZIONEPASTO;
+
+    /**
      * The table <code>pasto</code>.
      */
     public static final Pasto PASTO = Pasto.PASTO;
 
     /**
+     * The table <code>ricetta</code>.
+     */
+    public static final Ricetta RICETTA = Ricetta.RICETTA;
+
+    /**
      * The table <code>user</code>.
      */
     public static final User USER = User.USER;
+
+    /**
+     * The table <code>workout</code>.
+     */
+    public static final Workout WORKOUT = Workout.WORKOUT;
 }

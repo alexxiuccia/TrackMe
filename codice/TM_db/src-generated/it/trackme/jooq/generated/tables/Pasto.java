@@ -8,6 +8,7 @@ import it.trackme.jooq.generated.DefaultSchema;
 import it.trackme.jooq.generated.Keys;
 import it.trackme.jooq.generated.tables.records.PastoRecord;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
@@ -15,12 +16,12 @@ import java.util.function.Function;
 import org.jooq.Check;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function3;
+import org.jooq.Function4;
 import org.jooq.Identity;
 import org.jooq.Name;
 import org.jooq.Record;
 import org.jooq.Records;
-import org.jooq.Row3;
+import org.jooq.Row4;
 import org.jooq.Schema;
 import org.jooq.SelectField;
 import org.jooq.Table;
@@ -68,6 +69,11 @@ public class Pasto extends TableImpl<PastoRecord> {
      * The column <code>pasto.tipo</code>.
      */
     public final TableField<PastoRecord, String> TIPO = createField(DSL.name("tipo"), SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>pasto.data</code>.
+     */
+    public final TableField<PastoRecord, LocalDate> DATA = createField(DSL.name("data"), SQLDataType.LOCALDATE.nullable(false), this, "");
 
     private Pasto(Name alias, Table<PastoRecord> aliased) {
         this(alias, aliased, null);
@@ -164,18 +170,18 @@ public class Pasto extends TableImpl<PastoRecord> {
     }
 
     // -------------------------------------------------------------------------
-    // Row3 type methods
+    // Row4 type methods
     // -------------------------------------------------------------------------
 
     @Override
-    public Row3<Integer, Integer, String> fieldsRow() {
-        return (Row3) super.fieldsRow();
+    public Row4<Integer, Integer, String, LocalDate> fieldsRow() {
+        return (Row4) super.fieldsRow();
     }
 
     /**
      * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
      */
-    public <U> SelectField<U> mapping(Function3<? super Integer, ? super Integer, ? super String, ? extends U> from) {
+    public <U> SelectField<U> mapping(Function4<? super Integer, ? super Integer, ? super String, ? super LocalDate, ? extends U> from) {
         return convertFrom(Records.mapping(from));
     }
 
@@ -183,7 +189,7 @@ public class Pasto extends TableImpl<PastoRecord> {
      * Convenience mapping calling {@link SelectField#convertFrom(Class,
      * Function)}.
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function3<? super Integer, ? super Integer, ? super String, ? extends U> from) {
+    public <U> SelectField<U> mapping(Class<U> toType, Function4<? super Integer, ? super Integer, ? super String, ? super LocalDate, ? extends U> from) {
         return convertFrom(toType, Records.mapping(from));
     }
 }

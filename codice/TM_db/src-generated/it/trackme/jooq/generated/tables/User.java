@@ -8,16 +8,17 @@ import it.trackme.jooq.generated.DefaultSchema;
 import it.trackme.jooq.generated.Keys;
 import it.trackme.jooq.generated.tables.records.UserRecord;
 
+import java.time.LocalDate;
 import java.util.function.Function;
 
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function2;
+import org.jooq.Function10;
 import org.jooq.Identity;
 import org.jooq.Name;
 import org.jooq.Record;
 import org.jooq.Records;
-import org.jooq.Row2;
+import org.jooq.Row10;
 import org.jooq.Schema;
 import org.jooq.SelectField;
 import org.jooq.Table;
@@ -59,6 +60,46 @@ public class User extends TableImpl<UserRecord> {
      * The column <code>user.nome</code>.
      */
     public final TableField<UserRecord, String> NOME = createField(DSL.name("nome"), SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>user.cognome</code>.
+     */
+    public final TableField<UserRecord, String> COGNOME = createField(DSL.name("cognome"), SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>user.dataNascita</code>.
+     */
+    public final TableField<UserRecord, LocalDate> DATANASCITA = createField(DSL.name("dataNascita"), SQLDataType.LOCALDATE.nullable(false), this, "");
+
+    /**
+     * The column <code>user.peso</code>.
+     */
+    public final TableField<UserRecord, Float> PESO = createField(DSL.name("peso"), SQLDataType.REAL.nullable(false), this, "");
+
+    /**
+     * The column <code>user.altezza</code>.
+     */
+    public final TableField<UserRecord, Integer> ALTEZZA = createField(DSL.name("altezza"), SQLDataType.INTEGER.nullable(false), this, "");
+
+    /**
+     * The column <code>user.età</code>.
+     */
+    public final TableField<UserRecord, Integer> ETÀ = createField(DSL.name("età"), SQLDataType.INTEGER.nullable(false), this, "");
+
+    /**
+     * The column <code>user.stileDiVita</code>.
+     */
+    public final TableField<UserRecord, String> STILEDIVITA = createField(DSL.name("stileDiVita"), SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
+     * The column <code>user.calGoal</code>.
+     */
+    public final TableField<UserRecord, Integer> CALGOAL = createField(DSL.name("calGoal"), SQLDataType.INTEGER.nullable(false), this, "");
+
+    /**
+     * The column <code>user.calEffettive</code>.
+     */
+    public final TableField<UserRecord, Integer> CALEFFETTIVE = createField(DSL.name("calEffettive"), SQLDataType.INTEGER, this, "");
 
     private User(Name alias, Table<UserRecord> aliased) {
         this(alias, aliased, null);
@@ -148,18 +189,18 @@ public class User extends TableImpl<UserRecord> {
     }
 
     // -------------------------------------------------------------------------
-    // Row2 type methods
+    // Row10 type methods
     // -------------------------------------------------------------------------
 
     @Override
-    public Row2<Integer, String> fieldsRow() {
-        return (Row2) super.fieldsRow();
+    public Row10<Integer, String, String, LocalDate, Float, Integer, Integer, String, Integer, Integer> fieldsRow() {
+        return (Row10) super.fieldsRow();
     }
 
     /**
      * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
      */
-    public <U> SelectField<U> mapping(Function2<? super Integer, ? super String, ? extends U> from) {
+    public <U> SelectField<U> mapping(Function10<? super Integer, ? super String, ? super String, ? super LocalDate, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
         return convertFrom(Records.mapping(from));
     }
 
@@ -167,7 +208,7 @@ public class User extends TableImpl<UserRecord> {
      * Convenience mapping calling {@link SelectField#convertFrom(Class,
      * Function)}.
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function2<? super Integer, ? super String, ? extends U> from) {
+    public <U> SelectField<U> mapping(Class<U> toType, Function10<? super Integer, ? super String, ? super String, ? super LocalDate, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
         return convertFrom(toType, Records.mapping(from));
     }
 }

@@ -5,8 +5,12 @@ package it.trackme.jooq.generated;
 
 
 import it.trackme.jooq.generated.tables.Alimento;
+import it.trackme.jooq.generated.tables.Composizionericetta;
+import it.trackme.jooq.generated.tables.Creazionepasto;
 import it.trackme.jooq.generated.tables.Pasto;
+import it.trackme.jooq.generated.tables.Ricetta;
 import it.trackme.jooq.generated.tables.User;
+import it.trackme.jooq.generated.tables.Workout;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,14 +39,34 @@ public class DefaultSchema extends SchemaImpl {
     public final Alimento ALIMENTO = Alimento.ALIMENTO;
 
     /**
+     * The table <code>composizioneRicetta</code>.
+     */
+    public final Composizionericetta COMPOSIZIONERICETTA = Composizionericetta.COMPOSIZIONERICETTA;
+
+    /**
+     * The table <code>creazionePasto</code>.
+     */
+    public final Creazionepasto CREAZIONEPASTO = Creazionepasto.CREAZIONEPASTO;
+
+    /**
      * The table <code>pasto</code>.
      */
     public final Pasto PASTO = Pasto.PASTO;
 
     /**
+     * The table <code>ricetta</code>.
+     */
+    public final Ricetta RICETTA = Ricetta.RICETTA;
+
+    /**
      * The table <code>user</code>.
      */
     public final User USER = User.USER;
+
+    /**
+     * The table <code>workout</code>.
+     */
+    public final Workout WORKOUT = Workout.WORKOUT;
 
     /**
      * No further instances allowed
@@ -61,8 +85,12 @@ public class DefaultSchema extends SchemaImpl {
     public final List<Table<?>> getTables() {
         return Arrays.asList(
             Alimento.ALIMENTO,
+            Composizionericetta.COMPOSIZIONERICETTA,
+            Creazionepasto.CREAZIONEPASTO,
             Pasto.PASTO,
-            User.USER
+            Ricetta.RICETTA,
+            User.USER,
+            Workout.WORKOUT
         );
     }
 }

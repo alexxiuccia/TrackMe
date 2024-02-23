@@ -1,5 +1,6 @@
 # Specifica dei requisiti
-![OIG4](https://github.com/alexxiuccia/TrackMe/assets/92911810/3f735a43-b32e-40f9-9412-8e66df00c683)
+
+![moscow](https://github.com/alexxiuccia/TrackMe/assets/92911810/e4f7bd70-8e84-411d-9c9b-cb150315e2a5)
 
 ## 1. Introduzione
 ### 1.1 Obiettivo
@@ -69,3 +70,5 @@ Descriveremo gli attributi del sistema software, come la sicurezza, la scalabili
 
 ### 3.6 Altri requisiti
 Includeremo qualsiasi altro requisito che non rientri chiaramente nelle categorie precedenti, ma che è importante per il corretto funzionamento e l'efficacia dell'applicazione.
+
+![OIG4](https://github.com/alexxiuccia/TrackMe/assets/92911810/3f735a43-b32e-40f9-9412-8e66df00c683)

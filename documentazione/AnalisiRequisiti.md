@@ -1,8 +1,6 @@
 # Analisi dei requisiti
 
-
-![OIG4](https://github.com/alexxiuccia/TrackMe/assets/92911810/3f735a43-b32e-40f9-9412-8e66df00c683)
-
+![moscow](https://github.com/alexxiuccia/TrackMe/assets/92911810/d0ec62c4-9eb0-47d6-8542-0338ecc0d947)
 
 ### 1. Requisiti funzionali
    - consentire agli utenti di registrare i pasti consumati, inclusi gli alimenti e le porzioni.

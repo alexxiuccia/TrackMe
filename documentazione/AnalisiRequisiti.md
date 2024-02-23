@@ -28,3 +28,6 @@
 ### 6. Requisiti di manutenzione
    - facile aggiungere nuovi alimenti al database nutrizionale.
    - aggiornamenti regolari per includere nuove funzionalità e correggere bug.
+
+![image](https://github.com/alexxiuccia/TrackMe/assets/92911810/ec4167f8-a676-4958-8a3f-d64b527b1186)
+

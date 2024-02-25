@@ -1,5 +1,7 @@
 # Analisi dei requisiti
 
+![moscow](https://github.com/alexxiuccia/TrackMe/assets/92911810/d0ec62c4-9eb0-47d6-8542-0338ecc0d947)
+
 ### 1. Requisiti funzionali
    - consentire agli utenti di registrare i pasti consumati, inclusi gli alimenti e le porzioni.
    - fornire informazioni nutrizionali dettagliate sugli alimenti inseriti.
@@ -26,3 +28,6 @@
 ### 6. Requisiti di manutenzione
    - facile aggiungere nuovi alimenti al database nutrizionale.
    - aggiornamenti regolari per includere nuove funzionalità e correggere bug.
+
+![image](https://github.com/alexxiuccia/TrackMe/assets/92911810/ec4167f8-a676-4958-8a3f-d64b527b1186)
+

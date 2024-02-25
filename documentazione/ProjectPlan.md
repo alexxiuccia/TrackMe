@@ -1,6 +1,9 @@
 
 # Project Plan
 ## 1 Introduzione
+
+![Screenshot 2024-02-23 190621](https://github.com/alexxiuccia/TrackMe/assets/92911810/9b8c15de-b336-48fa-9ec7-526ec9f8eb5f)
+
 ### 1.1 Cos'è TrackMe?
 TrackMe è una piattaforma progettata per semplificare il monitoraggio e la gestione dell'alimentazione quotidiana. Questo strumento consente agli utenti di registrare con facilità i dettagli dei loro pasti, inclusi i macronutrienti come proteine, carboidrati e grassi, insieme al conteggio delle relative calorie. L'obiettivo è quello di offrire una piattaforma accessibile per tenere traccia degli alimenti consumati, consentendo agli utenti di impostare traguardi personalizzati, monitorare l'apporto nutrizionale e valutare il bilancio calorico giornaliero. Con un focus sulla facilità d'uso e sull'accuratezza dei dati, questa app si propone di essere un prezioso alleato per coloro che desiderano adottare abitudini alimentari più consapevoli e mantenere uno stile di vita sano.
 

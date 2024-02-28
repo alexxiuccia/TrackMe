@@ -1,7 +1,8 @@
 # TrackMe
-<center>
-![Screenshot 2024-02-23 190621](https://github.com/alexxiuccia/TrackMe/assets/92911810/1db35d9e-d917-4dc8-83dc-ee66f596ec4d)
-</center>
+
+<p align="center">
+  <img src="https://github.com/alexxiuccia/TrackMe/assets/92911810/1db35d9e-d917-4dc8-83dc-ee66f596ec4d">
+</p
 Progetto di Ingegneria del Software del corso di laurea triennale in Ingegneria Informatica presso l'Università degli Studi di Bergamo.
 
 * Aceti Alessia (1079023)

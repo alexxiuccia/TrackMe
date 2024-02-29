@@ -12,7 +12,7 @@ public class GestisciPastoTest {
 	@Test
 	public void testPassaggioId() {
 		LocalDate data = LocalDate.of(2022,11,05);
-		int result= GestisciPasto.InserisciPasto(0, data, "pranzo");
+		int result= GestisciPasto.inserisciPasto(0, data, "pranzo");
 		assertNotNull(result);
 	}
 

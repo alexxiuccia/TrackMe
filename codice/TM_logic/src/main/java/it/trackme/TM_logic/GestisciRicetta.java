@@ -19,5 +19,23 @@ public class GestisciRicetta {
 		return ricetta.getIdricetta();
 
 	}
+	public static void aggiornaQuantita(int idRicetta, int quantita) {
+        DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
+
+        // Cerca la ricetta nel database
+        RicettaRecord ricetta = create.selectFrom(Ricetta.RICETTA)
+                                     .where(Ricetta.RICETTA.IDRICETTA.eq(idRicetta))
+                                     .fetchOne();
+
+        if (ricetta != null) {
+            // Aggiorna la quantità se la ricetta è stata trovata
+            ricetta.setQuantità(quantita);
+            ricetta.store();
+            System.out.println("Quantità aggiornata con successo per la ricetta con ID: " + idRicetta);
+        } else {
+            // La ricetta non è stata trovata
+            System.out.println("Ricetta non trovata con ID: " + idRicetta);
+        }
+    }
 	
 }

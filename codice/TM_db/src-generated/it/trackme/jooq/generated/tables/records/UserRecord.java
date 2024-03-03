@@ -6,6 +6,7 @@ package it.trackme.jooq.generated.tables.records;
 
 import it.trackme.jooq.generated.tables.User;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import org.jooq.Field;
@@ -110,8 +111,8 @@ public class UserRecord extends UpdatableRecordImpl<UserRecord> implements Recor
     /**
      * Setter for <code>user.età</code>.
      */
-    public void setEtà(Integer value) {
-        set(6, value);
+    public void setEtà(Integer età) {
+        set(6, età);
     }
 
     /**

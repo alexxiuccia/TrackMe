@@ -15,9 +15,10 @@ public class App
 {
     public static void main( String[] args )
     {
-    	/*DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
+    	DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
     	UserRecord bill = create.newRecord(User.USER);
     	bill.setNome("bill");
-    	bill.store();*/
+    	bill.setCognome(null);
+    	bill.store();
     }
 }

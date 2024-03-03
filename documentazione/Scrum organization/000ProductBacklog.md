@@ -18,7 +18,6 @@ La realizzazione di TrackMe è stata pianificata e suddivisa in diversi passaggi
 
 #### 4. **Sviluppo backend:**
    - Implementare la logica di business per il calcolo delle calorie consumate e accumulate.
-   - Creare API per la comunicazione tra frontend e backend. ?????????????????????????
    - Implementare la gestione degli utenti e dell'autenticazione.
 
 #### 5. **Integrazione del database:**

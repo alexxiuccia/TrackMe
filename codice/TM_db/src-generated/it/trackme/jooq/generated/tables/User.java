@@ -13,12 +13,12 @@ import java.util.function.Function;
 
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function10;
+import org.jooq.Function11;
 import org.jooq.Identity;
 import org.jooq.Name;
 import org.jooq.Record;
 import org.jooq.Records;
-import org.jooq.Row10;
+import org.jooq.Row11;
 import org.jooq.Schema;
 import org.jooq.SelectField;
 import org.jooq.Table;
@@ -57,6 +57,11 @@ public class User extends TableImpl<UserRecord> {
     public final TableField<UserRecord, Integer> IDUSER = createField(DSL.name("idUser"), SQLDataType.INTEGER.nullable(false).identity(true), this, "");
 
     /**
+     * The column <code>user.nomeUtente</code>.
+     */
+    public final TableField<UserRecord, String> NOMEUTENTE = createField(DSL.name("nomeUtente"), SQLDataType.CLOB.nullable(false), this, "");
+
+    /**
      * The column <code>user.nome</code>.
      */
     public final TableField<UserRecord, String> NOME = createField(DSL.name("nome"), SQLDataType.CLOB.nullable(false), this, "");
@@ -70,6 +75,11 @@ public class User extends TableImpl<UserRecord> {
      * The column <code>user.dataNascita</code>.
      */
     public final TableField<UserRecord, LocalDate> DATANASCITA = createField(DSL.name("dataNascita"), SQLDataType.LOCALDATE.nullable(false), this, "");
+
+    /**
+     * The column <code>user.password</code>.
+     */
+    public final TableField<UserRecord, String> PASSWORD = createField(DSL.name("password"), SQLDataType.CLOB.nullable(false), this, "");
 
     /**
      * The column <code>user.peso</code>.
@@ -95,11 +105,6 @@ public class User extends TableImpl<UserRecord> {
      * The column <code>user.calGoal</code>.
      */
     public final TableField<UserRecord, Integer> CALGOAL = createField(DSL.name("calGoal"), SQLDataType.INTEGER.nullable(false), this, "");
-
-    /**
-     * The column <code>user.calEffettive</code>.
-     */
-    public final TableField<UserRecord, Integer> CALEFFETTIVE = createField(DSL.name("calEffettive"), SQLDataType.INTEGER, this, "");
 
     private User(Name alias, Table<UserRecord> aliased) {
         this(alias, aliased, null);
@@ -189,18 +194,18 @@ public class User extends TableImpl<UserRecord> {
     }
 
     // -------------------------------------------------------------------------
-    // Row10 type methods
+    // Row11 type methods
     // -------------------------------------------------------------------------
 
     @Override
-    public Row10<Integer, String, String, LocalDate, Float, Integer, Integer, String, Integer, Integer> fieldsRow() {
-        return (Row10) super.fieldsRow();
+    public Row11<Integer, String, String, String, LocalDate, String, Float, Integer, Integer, String, Integer> fieldsRow() {
+        return (Row11) super.fieldsRow();
     }
 
     /**
      * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
      */
-    public <U> SelectField<U> mapping(Function10<? super Integer, ? super String, ? super String, ? super LocalDate, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
+    public <U> SelectField<U> mapping(Function11<? super Integer, ? super String, ? super String, ? super String, ? super LocalDate, ? super String, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? extends U> from) {
         return convertFrom(Records.mapping(from));
     }
 
@@ -208,7 +213,7 @@ public class User extends TableImpl<UserRecord> {
      * Convenience mapping calling {@link SelectField#convertFrom(Class,
      * Function)}.
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function10<? super Integer, ? super String, ? super String, ? super LocalDate, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
+    public <U> SelectField<U> mapping(Class<U> toType, Function11<? super Integer, ? super String, ? super String, ? super String, ? super LocalDate, ? super String, ? super Float, ? super Integer, ? super Integer, ? super String, ? super Integer, ? extends U> from) {
         return convertFrom(toType, Records.mapping(from));
     }
 }

@@ -17,7 +17,7 @@ public class GestisciAlimento {
     	alimento.store();
     	return alimento.getIdalimento();
 	}
-	public static void inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi,int calorie)
+	public static void inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
     	AlimentoRecord alimento = create.newRecord(Alimento.ALIMENTO);
@@ -25,6 +25,8 @@ public class GestisciAlimento {
     	alimento.setCarbo(carbo);
     	alimento.setProteine(proteine);
     	alimento.setGrassi(grassi);
+    	Integer calorie=0;
+    	calorie= (int) ((carbo*4)+(proteine*4)+(grassi*9));
     	alimento.setCalorie(calorie);
     	alimento.store();
 	}

@@ -22,28 +22,10 @@ public class GestisciRicetta {
 		return ricetta.getIdricetta();
 
 	}
-	public static void aggiornaQuantita(int idRicetta, int quantita) {
-        DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-
-        // Cerca la ricetta nel database
-        RicettaRecord ricetta = create.selectFrom(Ricetta.RICETTA)
-                                     .where(Ricetta.RICETTA.IDRICETTA.eq(idRicetta))
-                                     .fetchOne();
-
-        if (ricetta != null) {
-            // Aggiorna la quantità se la ricetta è stata trovata
-            ricetta.setQuantità(quantita);
-            ricetta.store();
-            System.out.println("Quantità aggiornata con successo per la ricetta con ID: " + idRicetta);
-        } else {
-            // La ricetta non è stata trovata
-            System.out.println("Ricetta non trovata con ID: " + idRicetta);
-        }
-    }
 	public static void inserisciQuantitaAlimentoInRicetta(int idRicetta, int idAlimento, int quantita) {
         DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 
-        // Verifica che la ricetta e l'alimento esistano prima di procedere
+        
         RicettaRecord ricetta = create.selectFrom(Ricetta.RICETTA)
                 .where(Ricetta.RICETTA.IDRICETTA.eq(idRicetta))
                 .fetchOne();
@@ -53,7 +35,7 @@ public class GestisciRicetta {
                 .fetchOne();
 
         if (ricetta != null && alimento != null) {
-            // Aggiunge l'associazione tra ricetta e alimento nella tabella di associazione
+            
             create.insertInto(Composizionericetta.COMPOSIZIONERICETTA)
                     .set(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA, idRicetta)
                     .set(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO, idAlimento)
@@ -62,7 +44,7 @@ public class GestisciRicetta {
 
             System.out.println("Alimento aggiunto con successo alla ricetta con ID: " + idRicetta);
         } else {
-            // La ricetta o l'alimento non esiste
+            
             System.out.println("Ricetta o alimento non trovato.");
         }
 	}	

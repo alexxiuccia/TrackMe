@@ -27,7 +27,7 @@ public class GestisciPasto {
 	public static void inserisciDoseRicettaInPasto(int idPasto, int idRicetta, int dose) {
         DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 
-        // Verifica che il pasto e la ricetta esistano prima di procedere
+        
         PastoRecord pasto = create.selectFrom(Pasto.PASTO)
                 .where(Pasto.PASTO.IDPASTO.eq(idPasto))
                 .fetchOne();
@@ -37,7 +37,7 @@ public class GestisciPasto {
                 .fetchOne();
 
         if (pasto != null && ricetta != null) {
-            // Aggiunge l'associazione tra pasto e ricetta nella tabella di associazione
+            
             create.insertInto(Creazionepasto.CREAZIONEPASTO)
                     .set(Creazionepasto.CREAZIONEPASTO.IDPASTO, idPasto)
                     .set(Creazionepasto.CREAZIONEPASTO.IDRICETTA, idRicetta)
@@ -47,7 +47,7 @@ public class GestisciPasto {
 
             System.out.println("Ricetta aggiunta con successo al pasto con ID: " + idPasto);
         } else {
-            // Il pasto o la ricetta non esiste
+            
             System.out.println("Pasto o ricetta non trovato.");
         }
     }

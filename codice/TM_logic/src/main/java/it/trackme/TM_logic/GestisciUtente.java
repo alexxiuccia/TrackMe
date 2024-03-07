@@ -14,7 +14,7 @@ import it.trackme.jooq.generated.tables.User;
 import it.trackme.jooq.generated.tables.records.UserRecord;
 
 public class GestisciUtente {
-	public static int registraUtente (String nome, String cognome, LocalDate dataNascita, float peso, int altezza, int eta, String attivita,Integer id, String password )
+	public static boolean registraUtente (String nome, String cognome, LocalDate dataNascita, float peso, int altezza, int eta, String attivita,Integer id, String password )
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 		UserRecord utente = create.selectFrom(User.USER)
@@ -22,7 +22,7 @@ public class GestisciUtente {
                 .fetchOne();
 		if (utente != null) {
 			 System.out.println("L'utente è gia registrato ");
-			 return 1;
+			 return false;
 		}
     	UserRecord nuovoutente = create.newRecord(User.USER);
     	nuovoutente.setNome(nome);
@@ -37,7 +37,7 @@ public class GestisciUtente {
     	nuovoutente.setPassword(password);
     	
     	nuovoutente.store();
-    	return nuovoutente.getIduser();
+    	return true;
 	}
 	
 	public static boolean accessoUtentr(Integer id, String password)

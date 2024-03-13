@@ -184,7 +184,7 @@ Utilizzeremo GitHub come piattaforma di hosting. Fornirà un ambiente centralizz
 [Inserire qui eventuali strumenti specifici] 
 
 #### 10.1.6 Database:
-[Inserire qui il tipo di database]
+**DBeaver** : Per la gestione dei dati, utilizzeremo il software DBeaver come strumento di amministrazione e sviluppo del database. DBeaver fornisce un'ampia gamma di funzionalità per la connessione e la gestione di diversi tipi di database, facilitando lo sviluppo e la manutenzione dei dati del nostro progetto. Grazie alla sua interfaccia intuitiva e alle sue funzionalità, si adatta perfettamente alle esigenze del nostro team nello sviluppo e nella gestione del database per l'applicazione.
 
 ### 10.2 Risorse umane
 #### 10.2.1 Sviluppatori (Team di Sviluppo):

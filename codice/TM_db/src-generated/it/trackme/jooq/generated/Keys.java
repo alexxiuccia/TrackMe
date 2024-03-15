@@ -5,11 +5,15 @@ package it.trackme.jooq.generated;
 
 
 import it.trackme.jooq.generated.tables.Alimento;
+import it.trackme.jooq.generated.tables.Composizionericetta;
+import it.trackme.jooq.generated.tables.Creazionepasto;
 import it.trackme.jooq.generated.tables.Pasto;
 import it.trackme.jooq.generated.tables.Ricetta;
 import it.trackme.jooq.generated.tables.User;
 import it.trackme.jooq.generated.tables.Workout;
 import it.trackme.jooq.generated.tables.records.AlimentoRecord;
+import it.trackme.jooq.generated.tables.records.ComposizionericettaRecord;
+import it.trackme.jooq.generated.tables.records.CreazionepastoRecord;
 import it.trackme.jooq.generated.tables.records.PastoRecord;
 import it.trackme.jooq.generated.tables.records.RicettaRecord;
 import it.trackme.jooq.generated.tables.records.UserRecord;
@@ -33,6 +37,8 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     public static final UniqueKey<AlimentoRecord> ALIMENTO__PK_ALIMENTO = Internal.createUniqueKey(Alimento.ALIMENTO, DSL.name("pk_alimento"), new TableField[] { Alimento.ALIMENTO.IDALIMENTO }, true);
+    public static final UniqueKey<ComposizionericettaRecord> COMPOSIZIONERICETTA__PK_COMPOSIZIONERICETTA = Internal.createUniqueKey(Composizionericetta.COMPOSIZIONERICETTA, DSL.name("pk_composizioneRicetta"), new TableField[] { Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA, Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO }, true);
+    public static final UniqueKey<CreazionepastoRecord> CREAZIONEPASTO__PK_CREAZIONEPASTO = Internal.createUniqueKey(Creazionepasto.CREAZIONEPASTO, DSL.name("pk_creazionePasto"), new TableField[] { Creazionepasto.CREAZIONEPASTO.IDPASTO, Creazionepasto.CREAZIONEPASTO.IDRICETTA }, true);
     public static final UniqueKey<PastoRecord> PASTO__PK_PASTO = Internal.createUniqueKey(Pasto.PASTO, DSL.name("pk_pasto"), new TableField[] { Pasto.PASTO.IDPASTO }, true);
     public static final UniqueKey<RicettaRecord> RICETTA__PK_RICETTA = Internal.createUniqueKey(Ricetta.RICETTA, DSL.name("pk_ricetta"), new TableField[] { Ricetta.RICETTA.IDRICETTA }, true);
     public static final UniqueKey<UserRecord> USER__PK_USER = Internal.createUniqueKey(User.USER, DSL.name("pk_user"), new TableField[] { User.USER.IDUSER }, true);

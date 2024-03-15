@@ -5,6 +5,7 @@ package it.trackme.jooq.generated.tables;
 
 
 import it.trackme.jooq.generated.DefaultSchema;
+import it.trackme.jooq.generated.Keys;
 import it.trackme.jooq.generated.tables.records.CreazionepastoRecord;
 
 import java.util.function.Function;
@@ -21,6 +22,7 @@ import org.jooq.SelectField;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
+import org.jooq.UniqueKey;
 import org.jooq.impl.DSL;
 import org.jooq.impl.SQLDataType;
 import org.jooq.impl.TableImpl;
@@ -98,6 +100,11 @@ public class Creazionepasto extends TableImpl<CreazionepastoRecord> {
     @Override
     public Schema getSchema() {
         return aliased() ? null : DefaultSchema.DEFAULT_SCHEMA;
+    }
+
+    @Override
+    public UniqueKey<CreazionepastoRecord> getPrimaryKey() {
+        return Keys.CREAZIONEPASTO__PK_CREAZIONEPASTO;
     }
 
     @Override

@@ -13,17 +13,18 @@ import it.trackme.jooq.generated.tables.Alimento;
 import it.trackme.jooq.generated.tables.Composizionericetta;
 import it.trackme.jooq.generated.tables.Creazionepasto;
 import it.trackme.jooq.generated.tables.Pasto;
+import it.trackme.jooq.generated.tables.Ricetta;
 
 public class GestisciPianoAlimentare {
 	
-	public static void consumoDelGiorno(int userId) {
-	   /* DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
+	public static int consumoDelGiorno(int userId) {
+	   DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 
 	    LocalDate oggi = LocalDate.now();
 
 	    Result<Record1<Integer>> result = create
 	        .select(DSL.sum(Alimento.ALIMENTO.CALORIE
-	                .mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
+	        		.mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE.divide(100))
 	                .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ))
 	                .cast(Integer.class))
 	        .from(Pasto.PASTO)
@@ -34,65 +35,24 @@ public class GestisciPianoAlimentare {
 	        .join(Alimento.ALIMENTO)
 	        .on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
 	        .where(Pasto.PASTO.DATA.eq(oggi).and(Pasto.PASTO.IDUTENTE.eq(userId)))
-	        .groupBy(Pasto.PASTO.IDPASTO)
+	        
 	        .fetch();
-	    System.out.println(create
-	            .select(DSL.sum(Alimento.ALIMENTO.CALORIE
-	                    .mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
-	                    .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ))
-	                    .cast(Integer.class))
-	            .from(Pasto.PASTO)
-	            .join(Creazionepasto.CREAZIONEPASTO)
-	            .on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
-	            .join(Composizionericetta.COMPOSIZIONERICETTA)
-	            .on(Creazionepasto.CREAZIONEPASTO.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
-	            .join(Alimento.ALIMENTO)
-	            .on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
-	            .where(Pasto.PASTO.DATA.eq(oggi).and(Pasto.PASTO.IDUTENTE.eq(userId)))
-	            .groupBy(Pasto.PASTO.IDPASTO)
-	            .getSQL());
-	    
+	        
 	    for (Record1<Integer> record : result) {
-	        System.out.println("Calorie per pasto: " + record.value1());
+	    	 Integer value = record.value1();
+	    	 System.out.println("Valore: " + value);
 	    }
-
 	    int totalCalories = 0;
 	    for (Record1<Integer> record : result) {
+	    	
 	        totalCalories += record.value1();
 	    }
 		
 
-	    System.out.println("Calorie totali consumate oggi dall'utente " + userId + ": " + totalCalories);*/
-		// Ottieni il contesto DSL per eseguire la query
-        DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-
-        // Ottieni la data odierna
-        LocalDate oggi = LocalDate.now();
-
-        // Esegui la query per ottenere la somma delle calorie consumate per ogni pasto
-        Result<Record1<Integer>> result = create.select(
-                DSL.cast(DSL.sum(Alimento.ALIMENTO.CALORIE
-                        .mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
-                        .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ))
-                        , Integer.class)
-        )
-        .from(Pasto.PASTO)
-        .join(Creazionepasto.CREAZIONEPASTO).on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
-        .join(Composizionericetta.COMPOSIZIONERICETTA).on(Creazionepasto.CREAZIONEPASTO.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
-        .join(Alimento.ALIMENTO).on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
-        .where(Pasto.PASTO.DATA.eq(oggi).and(Pasto.PASTO.IDUTENTE.eq(userId)))
-        .groupBy(Pasto.PASTO.IDPASTO)
-        .fetch();
-
-        // Calcola il totale delle calorie consumate
-        int totalCalories = 0;
-        for (Record1<Integer> record : result) {
-            totalCalories += record.value1();
-        }
-
-        // Stampare il totale delle calorie consumate
-        System.out.println("Calorie totali consumate oggi dall'utente " + userId + ": " + totalCalories);
-    }
+	    System.out.println("Calorie totali consumate oggi dall'utente " + userId + ": " + totalCalories);
+	    return totalCalories;
+	    
+		}
 	
 	public static void consumoPeriodo(LocalDate inizio, LocalDate fine, int userId)
 	{
@@ -112,7 +72,7 @@ public class GestisciPianoAlimentare {
 				    	.join(Creazionepasto.CREAZIONEPASTO)
 				    	.on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
 				    	.join(Composizionericetta.COMPOSIZIONERICETTA)
-				    	.on(Creazionepasto.CREAZIONEPASTO.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
+				    	.on(Ricetta.RICETTA.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
 				    	.join(Alimento.ALIMENTO)
 				    	.on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
 				    	.where(Pasto.PASTO.DATA.eq(dataCorrente).and(Pasto.PASTO.IDUTENTE.eq(userId)))

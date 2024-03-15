@@ -21,5 +21,13 @@ public class GestisciUtenteTest {
         boolean result = GestisciUtente.registraUtente( "Luca18 ","Luca", "Rossi", data, 80f, 175, 18, "Leggermente attivo", "password",1600);
         assertFalse(result);
 	}
+	
+	@Test
+	public void testNuovoUtente() {
+		LocalDate data= LocalDate.of(2001, 5,21);
+		boolean result = GestisciUtente.registraUtente( "Giovanni2 ","Giovanni", "Totti", data, 80f, 175, 18, "Leggermente attivo", "password",1600);
+		assertTrue(result);
+		
+	}
 
 }

@@ -9,17 +9,18 @@ import it.trackme.jooq.generated.tables.Alimento;
 import it.trackme.jooq.generated.tables.records.AlimentoRecord;
 
 public class GestisciAlimento {
-	/*public static int selezionaAlimento(String nome)
+	public static int selezionaAlimento(String nome)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
     	AlimentoRecord alimento = create.newRecord(Alimento.ALIMENTO);
     	alimento.setNome(nome);
     	alimento.store();
     	return alimento.getIdalimento();
-	}*/
+	}
 	public static int inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
+		
     	AlimentoRecord alimento = create.newRecord(Alimento.ALIMENTO);
     	alimento.setNome(nome);
     	alimento.setCarbo(carbo);

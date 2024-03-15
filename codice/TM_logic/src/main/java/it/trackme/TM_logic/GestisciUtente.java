@@ -44,6 +44,7 @@ public class GestisciUtente {
     	nuovoutente.setCalgoal(cal);
     	
     	nuovoutente.store();
+    	System.out.println(nuovoutente.getIduser());
     	return true;
 	}
 	

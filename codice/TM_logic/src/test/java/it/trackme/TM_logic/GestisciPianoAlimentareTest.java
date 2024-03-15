@@ -10,10 +10,10 @@ public class GestisciPianoAlimentareTest {
 
 	@Test
 	public void test() {
-		int idUtente=1;
+		int idUtente=2;
 		
-		GestisciPianoAlimentare.consumoDelGiorno(idUtente);
-		fail("Test non riuscito");
+		int result= GestisciPianoAlimentare.consumoDelGiorno(idUtente);
+		assertTrue(result > 0);
 		
 		
 	}

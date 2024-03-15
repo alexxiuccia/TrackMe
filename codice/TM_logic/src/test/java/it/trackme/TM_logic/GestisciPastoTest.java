@@ -28,11 +28,11 @@ public class GestisciPastoTest {
 		idAlimento=GestisciAlimento.inserisciNuovoAlimento("Riso", 80.4f, 6.7f, 0.4f);
 		GestisciComposizioneRicetta.ComposizioneRicetta(idRicetta, idAlimento, 60);
 		
-		int idUtente=1;
+		int idUtente=2;
 		LocalDate oggi = LocalDate.now();
 		GestisciPasto pasto= new GestisciPasto();
-		int idPasto= pasto.inserisciPasto(idUtente, oggi, "pranzo");
-		pasto.inserisciDoseRicettaInPasto(idPasto, idRicetta, 2);
+		int idPasto= GestisciPasto.inserisciPasto(idUtente, oggi, "cena");
+		GestisciPasto.inserisciDoseRicettaInPasto(idPasto, idRicetta, 2);
 		assertNotNull(pasto);
 	}
 

@@ -3,19 +3,13 @@ package it.trackme.TM_logic;
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
+
 import org.junit.Test;
 
-public class GestisciPastoTest {
+public class GestisciPianoAlimentareTest {
 
 	@Test
-	public void testPassaggioId() {
-		LocalDate data = LocalDate.of(2022,11,05);
-		int result= GestisciPasto.inserisciPasto(0, data, "pranzo");
-		assertNotNull(result);
-	}
-	
-	@Test
-	public void testInserisciDoseRicettaInPasto() {
+	public void test() {
 		int idAlimento=0;
 		
 		idAlimento=GestisciAlimento.inserisciNuovoAlimento("Pollo", 76, 20, 3.6f);
@@ -30,10 +24,13 @@ public class GestisciPastoTest {
 		
 		int idUtente=1;
 		LocalDate oggi = LocalDate.now();
-		GestisciPasto pasto= new GestisciPasto();
-		int idPasto= pasto.inserisciPasto(idUtente, oggi, "pranzo");
-		pasto.inserisciDoseRicettaInPasto(idPasto, idRicetta, 2);
-		assertNotNull(pasto);
+		int idPasto= GestisciPasto.inserisciPasto(idUtente, oggi, "pranzo");
+		GestisciPasto.inserisciDoseRicettaInPasto(idPasto, idRicetta, 2);
+		
+		GestisciPianoAlimentare.consumoDelGiorno(idUtente);
+		fail("Test non riuscito");
+		
+		
 	}
 
 }

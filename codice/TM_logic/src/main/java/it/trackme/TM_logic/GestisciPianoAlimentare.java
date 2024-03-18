@@ -26,10 +26,10 @@ public class GestisciPianoAlimentare {
 	    LocalDate oggi = LocalDate.now();
 
 	    Result<Record1<Integer>> result = create
-	        .select(DSL.sum(Alimento.ALIMENTO.CALORIE
-	        		.mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE.divide(100))
-	                .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ))
-	                .cast(Integer.class))
+	        .select(Alimento.ALIMENTO.CALORIE
+	        		.mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
+	                .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ).divide(100))
+	                
 	        .from(Pasto.PASTO)
 	        .join(Creazionepasto.CREAZIONEPASTO)
 	        .on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
@@ -38,57 +38,62 @@ public class GestisciPianoAlimentare {
 	        .join(Alimento.ALIMENTO)
 	        .on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
 	        .where(Pasto.PASTO.DATA.eq(oggi).and(Pasto.PASTO.IDUTENTE.eq(userId)))
-	        
 	        .fetch();
 	    
-	        
-	    for (Record1<Integer> record : result) {
+	   
+	     //Per verificare le calorie degli alimenti   
+	    /*for (Record1<Integer> record : result) {
 	    	 Integer value = record.value1();
 	    	 System.out.println("Valore: " + value);
-	    }
-	    int totalCalories = 0;
+	    }*/
+	    int calorieTotali = 0;
 	    for (Record1<Integer> record : result) {
 	    	
-	        totalCalories += record.value1();
+	        calorieTotali += record.value1();
 	    }
 		
 
-	    System.out.println("Calorie totali consumate oggi dall'utente " + userId + ": " + totalCalories);
-	    return totalCalories;
+	    System.out.println("Calorie totali consumate oggi dall'utente " + userId + ": " + calorieTotali);
+	    return calorieTotali;
 	    
 		}
 	
-	public static void consumoPeriodo(LocalDate inizio, LocalDate fine, int userId)
+	public static int consumoPeriodo(LocalDate inizio, LocalDate fine, int userId)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-		int totalCalories = 0;
+		int calorieTotali = 0;
 		int cont=0;
 	
 		for (LocalDate dataCorrente = inizio; !dataCorrente.isAfter(fine); dataCorrente = dataCorrente.plusDays(1))
 		{
 			cont++;
 			Result<Record1<Integer>> result = create
-				    	.select(DSL.sum(Alimento.ALIMENTO.CALORIE
-				                    	.mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
-				                    	.mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ))
-				                    	.cast(Integer.class))
-				    	.from(Pasto.PASTO)
-				    	.join(Creazionepasto.CREAZIONEPASTO)
-				    	.on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
-				    	.join(Composizionericetta.COMPOSIZIONERICETTA)
-				    	.on(Ricetta.RICETTA.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
-				    	.join(Alimento.ALIMENTO)
-				    	.on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
-				    	.where(Pasto.PASTO.DATA.eq(dataCorrente).and(Pasto.PASTO.IDUTENTE.eq(userId)))
-				    	.groupBy(Pasto.PASTO.IDPASTO)
-				    	.fetch();
-			
-
-				
-					for (Record1<Integer> record : result) {
-						totalCalories += record.value1();
-					}
+			        .select(Alimento.ALIMENTO.CALORIE
+			        		.mul(Composizionericetta.COMPOSIZIONERICETTA.DOSE)
+			                .mul(Creazionepasto.CREAZIONEPASTO.QUANTITÀ).divide(100))
+			                
+			        .from(Pasto.PASTO)
+			        .join(Creazionepasto.CREAZIONEPASTO)
+			        .on(Pasto.PASTO.IDPASTO.eq(Creazionepasto.CREAZIONEPASTO.IDPASTO))
+			        .join(Composizionericetta.COMPOSIZIONERICETTA)
+			        .on(Creazionepasto.CREAZIONEPASTO.IDRICETTA.eq(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA))
+			        .join(Alimento.ALIMENTO)
+			        .on(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO.eq(Alimento.ALIMENTO.IDALIMENTO))
+			        .where(Pasto.PASTO.DATA.eq(dataCorrente).and(Pasto.PASTO.IDUTENTE.eq(userId)))
+			        .fetch();
+			    
+			  //Per verificare le calorie degli alimenti   
+				/*for (Record1<Integer> record : result) {
+		    	 Integer value = record.value1();
+		    	 System.out.println("Valore: " + value);
+		    	}*/  
+			    
+			    for (Record1<Integer> record : result) {
+			    	
+			        calorieTotali += record.value1();
+			    }
 		}
-	  System.out.println("Le calorie medie assunte giornalmente dal "+ inizio+" al "+fine+ " sono "+totalCalories/cont);
+	  System.out.println("Le calorie medie assunte giornalmente dal "+ inizio+" al "+fine+ " sono "+ calorieTotali/cont);
+	  return calorieTotali;
 	}
 }

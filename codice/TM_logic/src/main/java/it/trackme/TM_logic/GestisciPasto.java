@@ -24,32 +24,5 @@ public class GestisciPasto {
     	pasto.store();
     	return pasto.getIdpasto();
 	}
-	public static void inserisciDoseRicettaInPasto(int idPasto, int idRicetta, int dose) {
-        DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-
-        
-        PastoRecord pasto = create.selectFrom(Pasto.PASTO)
-                .where(Pasto.PASTO.IDPASTO.eq(idPasto))
-                .fetchOne();
-
-        RicettaRecord ricetta = create.selectFrom(Ricetta.RICETTA)
-                .where(Ricetta.RICETTA.IDRICETTA.eq(idRicetta))
-                .fetchOne();
-
-        if (pasto != null && ricetta != null) {
-            
-            create.insertInto(Creazionepasto.CREAZIONEPASTO)
-                    .set(Creazionepasto.CREAZIONEPASTO.IDPASTO, idPasto)
-                    .set(Creazionepasto.CREAZIONEPASTO.IDRICETTA, idRicetta)
-                    .set(Creazionepasto.CREAZIONEPASTO.QUANTITÀ, dose)
-                    .execute();
-            
-
-            System.out.println("Ricetta aggiunta con successo al pasto con ID: " + idPasto);
-        } else {
-            
-            System.out.println("Pasto o ricetta non trovato.");
-        }
-    }
 
 }

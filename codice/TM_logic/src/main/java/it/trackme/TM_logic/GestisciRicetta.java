@@ -22,30 +22,5 @@ public class GestisciRicetta {
 		return ricetta.getIdricetta();
 
 	}
-	public static void inserisciQuantitaAlimentoInRicetta(int idRicetta, int idAlimento, int quantita) {
-        DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-
-        
-        RicettaRecord ricetta = create.selectFrom(Ricetta.RICETTA)
-                .where(Ricetta.RICETTA.IDRICETTA.eq(idRicetta))
-                .fetchOne();
-
-        AlimentoRecord alimento = create.selectFrom(Alimento.ALIMENTO)
-                .where(Alimento.ALIMENTO.IDALIMENTO.eq(idAlimento))
-                .fetchOne();
-
-        if (ricetta != null && alimento != null) {
-            
-            create.insertInto(Composizionericetta.COMPOSIZIONERICETTA)
-                    .set(Composizionericetta.COMPOSIZIONERICETTA.IDRICETTA, idRicetta)
-                    .set(Composizionericetta.COMPOSIZIONERICETTA.IDALIMENTO, idAlimento)
-                    .set(Composizionericetta.COMPOSIZIONERICETTA.DOSE, quantita)
-                    .execute();
-
-            System.out.println("Alimento aggiunto con successo alla ricetta con ID: " + idRicetta);
-        } else {
-            
-            System.out.println("Ricetta o alimento non trovato.");
-        }
-	}	
+	
 }

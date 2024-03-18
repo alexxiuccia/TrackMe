@@ -17,6 +17,7 @@ public static void ComposizioneRicetta(int idRicetta, int idAlimento, int dose) 
     	composizioneRicetta.setIdricetta(idRicetta);
     	composizioneRicetta.setIdalimento(idAlimento);
     	composizioneRicetta.setDose(dose);
+    	composizioneRicetta.store();
 	}
 
 }

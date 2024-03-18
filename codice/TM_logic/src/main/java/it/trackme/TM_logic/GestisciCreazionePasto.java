@@ -17,6 +17,7 @@ public class GestisciCreazionePasto {
     	creazionePasto.setIdpasto(idPasto);
     	creazionePasto.setIdricetta(idRicetta);
     	creazionePasto.setQuantità(quantita);
+    	creazionePasto.store();
     	
 	}
 

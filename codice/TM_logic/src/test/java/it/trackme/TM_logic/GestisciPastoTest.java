@@ -16,7 +16,7 @@ public class GestisciPastoTest {
 	
 	@Test
 	public void testInserisciDoseRicettaInPasto() {
-		int idAlimento=0;
+		int idAlimento;
 		
 		idAlimento=GestisciAlimento.inserisciNuovoAlimento("Pollo", 76, 20, 3.6f);
 		int idRicetta=GestisciRicetta.nuovaRicetta("Pollo con riso e zucchine", 100 );
@@ -31,8 +31,7 @@ public class GestisciPastoTest {
 		int idUtente=2;
 		LocalDate oggi = LocalDate.now();
 		GestisciPasto pasto= new GestisciPasto();
-		int idPasto= GestisciPasto.inserisciPasto(idUtente, oggi, "cena");
-		GestisciPasto.inserisciDoseRicettaInPasto(idPasto, idRicetta, 2);
+		GestisciPasto.inserisciPasto(idUtente, oggi, "cena");
 		assertNotNull(pasto);
 	}
 

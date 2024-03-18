@@ -2,6 +2,7 @@ package it.trackme.TM_logic;
 
 import java.time.LocalDate;
 
+
 import org.jooq.DSLContext;
 import org.jooq.Record1;
 import org.jooq.Result;
@@ -15,7 +16,9 @@ import it.trackme.jooq.generated.tables.Creazionepasto;
 import it.trackme.jooq.generated.tables.Pasto;
 import it.trackme.jooq.generated.tables.Ricetta;
 
+
 public class GestisciPianoAlimentare {
+	
 	
 	public static int consumoDelGiorno(int userId) {
 	   DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
@@ -37,6 +40,7 @@ public class GestisciPianoAlimentare {
 	        .where(Pasto.PASTO.DATA.eq(oggi).and(Pasto.PASTO.IDUTENTE.eq(userId)))
 	        
 	        .fetch();
+	    
 	        
 	    for (Record1<Integer> record : result) {
 	    	 Integer value = record.value1();
@@ -78,6 +82,7 @@ public class GestisciPianoAlimentare {
 				    	.where(Pasto.PASTO.DATA.eq(dataCorrente).and(Pasto.PASTO.IDUTENTE.eq(userId)))
 				    	.groupBy(Pasto.PASTO.IDPASTO)
 				    	.fetch();
+			
 
 				
 					for (Record1<Integer> record : result) {

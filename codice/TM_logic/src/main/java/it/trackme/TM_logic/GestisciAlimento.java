@@ -6,21 +6,33 @@ import org.jooq.impl.DSL;
 
 import it.trackme.TM_db.DBconnection;
 import it.trackme.jooq.generated.tables.Alimento;
+
 import it.trackme.jooq.generated.tables.records.AlimentoRecord;
 
+
 public class GestisciAlimento {
-	public static int selezionaAlimento(String nome)
+	public static Integer selezionaAlimento(String nome)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-    	AlimentoRecord alimento = create.newRecord(Alimento.ALIMENTO);
-    	alimento.setNome(nome);
-    	alimento.store();
-    	return alimento.getIdalimento();
+		AlimentoRecord alimentoPresente = create.selectFrom(Alimento.ALIMENTO)
+                .where(Alimento.ALIMENTO.NOME.eq(nome))
+                .fetchOne();
+		if (alimentoPresente != null) {
+			 return alimentoPresente.getIdalimento();
+		}
+		System.out.println("L'alimento non è presente ");
+    	return null;
 	}
-	public static int inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi)
+	public static Integer inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
-		
+		AlimentoRecord alimentoPresente = create.selectFrom(Alimento.ALIMENTO)
+                .where(Alimento.ALIMENTO.NOME.eq(nome))
+                .fetchOne();
+		if (alimentoPresente != null) {
+			 System.out.println("L'alimento è gia presente ");
+			 return null;
+		}
     	AlimentoRecord alimento = create.newRecord(Alimento.ALIMENTO);
     	alimento.setNome(nome);
     	alimento.setCarbo(carbo);

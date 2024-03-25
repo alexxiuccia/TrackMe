@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutY="-2.0" prefHeight="590.0" prefWidth="198.0" style="-fx-background-color: #0096ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="139.0" prefWidth="198.0" />
+         </children>
+      </VBox>
+      <TextArea fx:id="recipeTextArea" layoutX="270.0" layoutY="202.0" prefHeight="290.0" prefWidth="441.0" />
+      <Button fx:id="pastaButton" layoutX="270.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" stylesheets="@Style.css" text="Pasta al pomodoro" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chickenButton" layoutX="512.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" stylesheets="@Style.css" text="Petto di pollo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="salmonButton" layoutX="386.0" layoutY="105.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="174.0" stylesheets="@Style.css" text="Salmone alla piastra" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

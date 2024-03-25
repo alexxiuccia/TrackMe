@@ -48,11 +48,11 @@ public class GestisciUtente {
     	return true;
 	}
 	
-	public static boolean accessoUtente(Integer id, String password)
+	public static boolean accessoUtente(String nomeUtente, String password)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 		UserRecord utente = create.selectFrom(User.USER)
-                .where(User.USER.IDUSER.eq(id))
+                .where(User.USER.NOMEUTENTE.eq(nomeUtente))
                 .fetchOne();
 		if (utente != null && utente.getPassword().equals(password)) 
             return true;

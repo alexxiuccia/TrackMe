@@ -1,7 +1,7 @@
 # TrackMe
 
 <p align="center">
-  <img src="https://github.com/alexxiuccia/TrackMe/assets/92911810/1db35d9e-d917-4dc8-83dc-ee66f596ec4d">
+  ![Logo](https://github.com/alexxiuccia/TrackMe/assets/92911810/ba70e6d6-9c8d-45d4-bd5e-1094ebb63a15)
 </p
 Progetto di Ingegneria del Software del corso di laurea triennale in Ingegneria Informatica presso l'Università degli Studi di Bergamo.
 

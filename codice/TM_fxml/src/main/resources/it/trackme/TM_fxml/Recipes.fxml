@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="848.0" style="-fx-background-color: #ebeef0; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.trackme.TM_fxml.RecipesController">
+   <children>
+      <VBox layoutY="-2.0" prefHeight="590.0" prefWidth="198.0" style="-fx-background-color: #0096ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="139.0" prefWidth="198.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="64.0" layoutY="101.0" size="90" />
+               </children></Pane>
+            <Label prefHeight="17.0" prefWidth="200.0" text="   Recipes" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btn1" layoutX="255.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" stylesheets="@Style.css" text="Ricetta 1" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2" layoutX="542.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" stylesheets="@Style.css" text="Ricetta 2" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" layoutX="395.0" layoutY="104.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="174.0" stylesheets="@Style.css" text="Ricetta 3" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <VBox layoutX="334.0" layoutY="172.0" prefHeight="376.0" prefWidth="295.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #0096ff; -fx-border-width: 2px;">
+               <children>
+                  <Text fx:id="txtNomeRicetta" fill="#b9b0b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricetta:" textAlignment="CENTER" wrappingWidth="292.29296875">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <TextArea fx:id="txtRicetta" prefHeight="243.0" prefWidth="295.0" style="-fx-background-radius: 10; -fx-background-color: trtansparent;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

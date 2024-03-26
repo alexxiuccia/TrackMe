@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="476.0" prefWidth="193.0" style="-fx-background-color: #0598ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="175.0" prefWidth="193.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="54.0" layoutY="133.0" size="115" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="10.0" layoutY="49.0" size="50" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Label layoutX="221.0" layoutY="25.0" prefHeight="34.0" prefWidth="163.0" text="Settings menu" textFill="#0598ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="80.0" text="Name:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="113.0" text="Surname:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="151.0" text="Date of Birtrh:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="183.0" text=" Mail:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="219.0" text=" Daily goal:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSurname" layoutX="392.0" layoutY="113.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtDate" layoutX="392.0" layoutY="150.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtMail" layoutX="392.0" layoutY="182.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtGoal" layoutX="392.0" layoutY="218.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtName" layoutX="392.0" layoutY="79.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+   </children>
+</AnchorPane>

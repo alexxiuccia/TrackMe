@@ -11,7 +11,7 @@ Progetto di Ingegneria del Software del corso di laurea triennale in Ingegneria 
 # **ISTRUZIONI**
 
 ## **ESECUZIONE DA TERMINALE**
-### Passi per l'esecuzione di TrackMe:
+### Passaggi per eseguire l'applicativo JavaFX TrackMe da terminale:
 
 1. **Eseguire il progetto TM_db:**
    - Assicurarsi di avere Maven installato sul sistema.
@@ -35,10 +35,8 @@ Progetto di Ingegneria del Software del corso di laurea triennale in Ingegneria 
      mvn clean javafx:run
      ```
 
-Una volta completati questi passaggi, l'applicativo TrackMe dovrebbe essere avviato correttamente. Assicurarsi di seguire l'ordine specificato per l'esecuzione dei progetti.
-
 ## **ESECUZIONE TRAMITE ECLIPSE**
-Ecco i passaggi per eseguire l'applicativo JavaFX TrackMe utilizzando Eclipse:
+### Passaggi per eseguire l'applicativo JavaFX TrackMe utilizzando Eclipse:
 
 1. **Esegui il progetto TM_db:**
    - Importa il progetto TM_db in Eclipse:
@@ -65,4 +63,4 @@ Ecco i passaggi per eseguire l'applicativo JavaFX TrackMe utilizzando Eclipse:
         - **Goals**: `clean javafx:run`
      5. Fai clic su `Apply` e poi su `Run`.
 
-Una volta completati questi passaggi, l'applicativo TrackMe dovrebbe essere avviato correttamente da Eclipse. Assicurati di seguire l'ordine specificato per l'esecuzione dei progetti.
+Una volta completati questi passaggi, l'applicativo TrackMe dovrebbe essere avviato correttamente da Eclipse. Assicurarsi di seguire l'ordine specificato per l'esecuzione dei progetti.

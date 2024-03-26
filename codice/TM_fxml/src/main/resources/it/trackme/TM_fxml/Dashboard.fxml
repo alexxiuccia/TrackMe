@@ -30,7 +30,7 @@
                   <Font size="23.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" />
                </graphic>
             </Button>
             <Button fx:id="btnRecipes" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" text="Recipes" textFill="WHITE">
@@ -38,7 +38,7 @@
                   <Font size="23.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="COFFEE" />
                </graphic>
             </Button>
             <Button fx:id="btnSettings" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" text="Settings" textFill="WHITE">
@@ -138,7 +138,7 @@
             <TextField fx:id="txtAmount" layoutX="501.0" layoutY="116.0" prefHeight="27.0" prefWidth="174.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
             <ComboBox fx:id="comboWhich" layoutX="337.0" layoutY="435.0" prefHeight="27.0" prefWidth="81.0" promptText="select" style="-fx-background-color: transparent; -fx-border-color: #0598FF;" />
             <ListView fx:id="listRecipes" layoutX="22.0" layoutY="418.0" prefHeight="122.0" prefWidth="206.0" />
-            <Label layoutX="29.0" layoutY="316.0" text="Amoun(g):t">
+            <Label layoutX="29.0" layoutY="316.0" text="Amount(g):">
                <font>
                   <Font size="15.0" />
                </font>

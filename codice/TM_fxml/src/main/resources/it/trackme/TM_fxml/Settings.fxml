@@ -52,11 +52,11 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtSurname" layoutX="392.0" layoutY="113.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
-      <TextField fx:id="txtDate" layoutX="392.0" layoutY="150.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
-      <TextField fx:id="txtMail" layoutX="392.0" layoutY="182.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
-      <TextField fx:id="txtGoal" layoutX="392.0" layoutY="218.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
-      <TextField fx:id="txtName" layoutX="392.0" layoutY="79.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtSurname" editable="false" layoutX="392.0" layoutY="113.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtDate" editable="false" layoutX="392.0" layoutY="150.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtMail" editable="false" layoutX="392.0" layoutY="182.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtGoal" editable="false" layoutX="392.0" layoutY="218.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
+      <TextField fx:id="txtName" editable="false" layoutX="392.0" layoutY="79.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px;" />
       <Button fx:id="btnDiary" layoutX="420.0" layoutY="313.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="93.0" style="-fx-background-color: #0598ff;" text="Back to Diary" textFill="WHITE" />
    </children>
 </AnchorPane>

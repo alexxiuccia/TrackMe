@@ -14,7 +14,7 @@
    <children>
       <VBox layoutX="-2.0" layoutY="-3.0" prefHeight="665.0" prefWidth="286.0" style="-fx-background-color: #0598ff;" AnchorPane.bottomAnchor="0.0">
          <children>
-            <Pane prefHeight="173.0" prefWidth="286.0">
+            <Pane prefHeight="229.0" prefWidth="286.0">
                <children>
                   <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="55.0" layoutY="92.0" size="50" />
                   <Label layoutX="102.0" layoutY="47.0" text="TrackMe" textFill="WHITE">
@@ -24,14 +24,6 @@
                   </Label>
                </children>
             </Pane>
-            <Button fx:id="btnDiary" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" text="Diary" textFill="WHITE">
-               <font>
-                  <Font size="23.0" />
-               </font>
-               <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
-               </graphic>
-            </Button>
             <Button fx:id="btnStats" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" text="Stats" textFill="WHITE">
                <font>
                   <Font size="23.0" />

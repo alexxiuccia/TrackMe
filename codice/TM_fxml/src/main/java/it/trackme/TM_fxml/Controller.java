@@ -1,11 +1,13 @@
 package it.trackme.TM_fxml;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -17,8 +19,6 @@ import javafx.scene.control.TextField;
 
 public class Controller implements Initializable {
 	
-	 @FXML
-	    private Button btnDiary;
 
 	    @FXML
 	    private Button btnDish;
@@ -61,16 +61,34 @@ public class Controller implements Initializable {
 		  stage.show();
 	}
 	
-	public void handleClicks(javafx.event.ActionEvent mouseEvent) {
+	
+	
+	/*public void handleClicks(ActionEvent event) {
 		
-	/*	if (mouseEvent.getSource() == btnDashboard) {
-            loadStages("Dashboard.fxml");
-        } else if (mouseEvent.getSource() == btnStudents) {		///ERRORE BOTTONI NON RICONOSCIUTI
+		if (event.getSource() == btnDiary) {
+           // loadStages("Dashboard.fxml");
+        } else if (event.getSource() == btnStats) {		
             loadStages("Students.fxml");
-        } else if (mouseEvent.getSource() == btn_Timetable) {
-            loadStages("Timetable.fxml");
-        }*/
-	}
+        } else if (event.getSource() == btnRecipes) {
+        	 System.out.println("Username: ");
+        	try {
+				Parent root;
+				root = FXMLLoader.load(getClass().getResource("Recipes.fxml"));
+				Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+				Scene scene = new Scene(root);
+				stage.setScene(scene);
+				stage.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+        } else if (event.getSource() == btnSettings) {
+            loadStages("Settings.fxml");
+        }
+		
+	}*/
+	
+	
 	
 	
 	
@@ -93,6 +111,51 @@ public class Controller implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
+		btnRecipes.setOnAction(event -> {     	  
+					try {
+						Parent root;
+						root = FXMLLoader.load(getClass().getResource("Recipes.fxml"));
+						Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+						Scene scene = new Scene(root);
+						stage.setScene(scene);
+						stage.show();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}   	 
+	            
+	        });
+		
+		btnStats.setOnAction(event -> {
+			try {
+				Parent root;
+				root = FXMLLoader.load(getClass().getResource("Stats.fxml"));
+				Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+				Scene scene = new Scene(root);
+				stage.setScene(scene);
+				stage.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		});
+		
+		btnSettings.setOnAction(event -> {
+			try {
+				Parent root;
+				root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
+				Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+				Scene scene = new Scene(root);
+				stage.setScene(scene);
+				stage.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		});
+		
 		
 	}
 

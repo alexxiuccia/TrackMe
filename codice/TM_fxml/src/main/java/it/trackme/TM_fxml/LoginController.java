@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import it.trackme.TM_logic.GestisciUtente;
+//import it.trackme.TM_logic.GestisciUtente;
 import javafx.fxml.Initializable;
 
 import javafx.fxml.FXML;
@@ -34,6 +34,9 @@ public class LoginController implements Initializable{
     
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		
+		
+		
 		// TODO Auto-generated method stub		
 		 btnLogin.setOnAction(event -> {
 	            String username = txtUser.getText();
@@ -44,15 +47,16 @@ public class LoginController implements Initializable{
 	            System.out.println("Password: " + password);
 	           // if(GestisciUtente.accessoUtente(null, password))
 	          //  GestisciUtente.accessoUtente()
-	            if(password ==  "ciao")
+	            if(1==1)
 	            {
-	            	  Parent root;
+	            	  
 					try {
+						Parent root;
 						root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
-						 Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		            	  Scene scene = new Scene(root);
-		            	  stage.setScene(scene);
-		            	  stage.show();
+						Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+						Scene scene = new Scene(root);
+						stage.setScene(scene);
+						stage.show();
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

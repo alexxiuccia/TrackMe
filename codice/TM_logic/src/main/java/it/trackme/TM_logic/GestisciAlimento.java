@@ -22,7 +22,7 @@ public class GestisciAlimento {
 		}
 		System.out.println("L'alimento non è presente ");
     	return null;
-	}
+	} 
 	public static Integer inserisciNuovoAlimento(String nome,float carbo,float proteine,float grassi)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);

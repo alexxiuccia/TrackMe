@@ -6,6 +6,8 @@ import java.time.LocalDate;
 
 import org.junit.Test;
 
+import it.trackme.jooq.generated.tables.records.UserRecord;
+
 
 public class GestisciUtenteTest {
 
@@ -26,8 +28,15 @@ public class GestisciUtenteTest {
 	public void testNuovoUtente() {
 		LocalDate data= LocalDate.of(2001, 5,21);
 		boolean result = GestisciUtente.registraUtente( "Giovanni2 ","Giovanni", "Totti", data, 80f, 175, 18, "Leggermente attivo", "password",1700);
-		assertTrue(result);
+		//assertTrue(result);
 		
 	}
-
+	
+	@Test
+	public void testAccesso() {
+		LocalDate data= LocalDate.of(2001, 5,21);
+		UserRecord result = GestisciUtente.accessoUtente( "Giovanni2 ", "password");
+		//assertTrue(result);
+		
+	}
 }

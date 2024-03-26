@@ -21,7 +21,7 @@ public class GestisciPasto {
     	pasto.setIdutente(idUtente);
     	pasto.setData(data);
     	pasto.setTipo(tipoPasto);
-    	pasto.store();
+    	pasto.store(); 
     	return pasto.getIdpasto();
 	}
 

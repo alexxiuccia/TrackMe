@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -57,8 +58,8 @@
                   <Font size="22.0" />
                </font>
             </Label>
-            <Button fx:id="btnRecipe" layoutX="447.0" layoutY="139.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Recipe" textFill="WHITE" />
-            <Label layoutX="29.0" layoutY="118.0" prefHeight="21.0" prefWidth="81.0" text="Dish Name:">
+            <Button fx:id="btnRecipe" layoutX="574.0" layoutY="303.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Recipe" textFill="WHITE" />
+            <Label layoutX="29.0" layoutY="118.0" prefHeight="21.0" prefWidth="81.0" text="Food Name:">
                <font>
                   <Font size="15.0" />
                </font>
@@ -68,55 +69,81 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txt" layoutX="160.0" layoutY="116.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
-            <TextField fx:id="nr" layoutX="162.0" layoutY="162.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-border-color: #0598FF; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px;" />
-            <ComboBox fx:id="combo" layoutX="160.0" layoutY="415.0" prefHeight="25.0" prefWidth="149.0" promptText="select" style="-fx-background-color: transparent; -fx-border-color: #0598FF;" />
-            <Label layoutX="21.0" layoutY="72.0" prefHeight="28.0" prefWidth="181.0" text="Add a new recipe:" textFill="#0598ff">
+            <TextField fx:id="txtFood" layoutX="160.0" layoutY="116.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
+            <TextField fx:id="txtFat" layoutX="162.0" layoutY="162.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-border-color: #0598FF; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px;" />
+            <Label layoutX="21.0" layoutY="72.0" prefHeight="28.0" prefWidth="181.0" text="Add a new Food:" textFill="#0598ff">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="31.0" layoutY="363.0" prefHeight="28.0" prefWidth="181.0" text="Pick an existing dish:" textFill="#0598ff">
+            <Label layoutX="30.0" layoutY="387.0" prefHeight="28.0" prefWidth="181.0" text="Add new meal:" textFill="#0598ff">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="33.0" layoutY="417.0" prefHeight="21.0" prefWidth="81.0" text="Dish Name:">
+            <Label layoutX="262.0" layoutY="438.0" prefHeight="21.0" prefWidth="81.0" text="Meal ">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="31.0" layoutY="469.0" prefHeight="21.0" prefWidth="81.0" text="Amount:">
+            <Label layoutX="249.0" layoutY="509.0" prefHeight="21.0" prefWidth="81.0" text="Amount:">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nr" layoutX="162.0" layoutY="466.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
+            <TextField fx:id="txtAmountDish" layoutX="330.0" layoutY="506.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
             <Label layoutX="30.0" layoutY="210.0" text="Carbs (100gr):">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nr" layoutX="161.0" layoutY="208.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
+            <TextField fx:id="txtCarbs" layoutX="161.0" layoutY="208.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
             <Label layoutX="30.0" layoutY="260.0" text="Protein (100gr):">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nr" layoutX="161.0" layoutY="258.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
-            <Button fx:id="btnDish" layoutX="447.0" layoutY="428.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Dish" textFill="WHITE" />
-            <Label layoutX="30.0" layoutY="516.0" prefHeight="28.0" prefWidth="181.0" text="Add workout:" textFill="#0598ff">
+            <TextField fx:id="txtProtein" layoutX="161.0" layoutY="258.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
+            <Button fx:id="btnMeal" layoutX="508.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Meal" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="556.0" prefHeight="28.0" prefWidth="181.0" text="Add workout:" textFill="#0598ff">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="29.0" layoutY="561.0" text="Calories:">
+            <Label layoutX="29.0" layoutY="601.0" text="Calories:">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nr" layoutX="162.0" layoutY="559.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
-            <Button fx:id="btnWorkout" layoutX="452.0" layoutY="551.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Workout" textFill="WHITE" />
+            <TextField fx:id="nr" layoutX="162.0" layoutY="599.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
+            <Button fx:id="btnWorkout" layoutX="514.0" layoutY="570.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add Workout" textFill="WHITE" />
+            <Button fx:id="btnFood" layoutX="280.0" layoutY="303.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Add food" textFill="WHITE" />
+            <Label layoutX="395.0" layoutY="83.0" prefHeight="21.0" prefWidth="101.0" text="Recipe Name:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRecName" layoutX="501.0" layoutY="81.0" prefHeight="27.0" prefWidth="174.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
+            <ListView fx:id="listFood" layoutX="398.0" layoutY="160.0" prefHeight="134.0" prefWidth="277.0" />
+            <Label layoutX="395.0" layoutY="37.0" prefHeight="28.0" prefWidth="181.0" text="Add a new Recipe:" textFill="#0598ff">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="398.0" layoutY="119.0" prefHeight="21.0" prefWidth="81.0" text="Amount:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAmount" layoutX="501.0" layoutY="116.0" prefHeight="27.0" prefWidth="174.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
+            <ComboBox fx:id="comboWhich" layoutX="337.0" layoutY="435.0" prefHeight="27.0" prefWidth="81.0" promptText="select" style="-fx-background-color: transparent; -fx-border-color: #0598FF;" />
+            <ListView fx:id="listRecipes" layoutX="22.0" layoutY="418.0" prefHeight="122.0" prefWidth="206.0" />
+            <Label layoutX="29.0" layoutY="316.0" text="Amount">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFoodAmount" layoutX="160.0" layoutY="314.0" prefHeight="25.0" prefWidth="101.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px;" />
          </children>
       </Pane>
    </children>

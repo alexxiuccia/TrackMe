@@ -48,18 +48,19 @@ public class GestisciUtente {
     	return true;
 	}
 	
-	public static boolean accessoUtente(String nomeUtente, String password)
+	public static UserRecord accessoUtente(String nomeUtente, String password)
 	{
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 		UserRecord utente = create.selectFrom(User.USER)
                 .where(User.USER.NOMEUTENTE.eq(nomeUtente))
                 .fetchOne();
-		if (utente != null && utente.getPassword().equals(password)) 
-            return true;
+		System.out.println(utente);
+		if (utente != null && utente.getPassword().equals(password)) {
+            return utente;
             
-        else {
+		}else {
             System.out.println("ID o password errati, riprovare. ");
-            return false;
+            return null;
         }
     
 	}

@@ -8,7 +8,7 @@
 	<groupId>it.trackme</groupId>
 	<artifactId>TM_db</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<packaging>jar</packaging>
 	<name>TM_db</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>

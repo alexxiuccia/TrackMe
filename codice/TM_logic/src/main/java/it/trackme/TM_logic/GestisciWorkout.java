@@ -14,7 +14,7 @@ public class GestisciWorkout {
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
     	WorkoutRecord workout = create.newRecord(Workout.WORKOUT);
     	workout.setIdutente(idUtente);
-    	workout.setCalorie(calorie);
+    	workout.setCalorie(calorie); 
     	workout.store();
 	}
 

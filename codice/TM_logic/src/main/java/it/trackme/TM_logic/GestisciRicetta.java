@@ -11,8 +11,8 @@ import it.trackme.jooq.generated.tables.Ricetta;
 import it.trackme.jooq.generated.tables.records.AlimentoRecord;
 import it.trackme.jooq.generated.tables.records.RicettaRecord;
 
-
-public class GestisciRicetta {
+ 
+public class GestisciRicetta { 
 	public static int nuovaRicetta(String nome, int quantita) {
 		DSLContext create = DSL.using(DBconnection.getConnection(), SQLDialect.SQLITE);
 		RicettaRecord ricetta = create.newRecord(Ricetta.RICETTA);

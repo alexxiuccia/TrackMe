@@ -24,6 +24,30 @@
                   <Font size="37.0" />
                </font>
             </Label>
+            <Button fx:id="btnStats" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Stats" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
+               </graphic>
+            </Button>
+            <Button fx:id="diarybtn" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Diary" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnSettings" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GEAR" />
+               </graphic>
+            </Button>
          </children>
       </VBox>
       <Button fx:id="btn1" layoutX="255.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" stylesheets="@Style.css" text="Ricetta 1" textFill="WHITE">
@@ -41,18 +65,18 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <VBox layoutX="334.0" layoutY="172.0" prefHeight="376.0" prefWidth="295.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+      <VBox layoutX="292.0" layoutY="172.0" prefHeight="376.0" prefWidth="395.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #0096ff; -fx-border-width: 2px;">
                <children>
-                  <Text fx:id="txtNomeRicetta" fill="#b9b0b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricetta:" textAlignment="CENTER" wrappingWidth="292.29296875">
+                  <Text fx:id="txtNomeRicetta" fill="#b9b0b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricetta:" textAlignment="CENTER" wrappingWidth="348.29296875">
                      <font>
                         <Font size="37.0" />
                      </font>
                   </Text>
                </children>
             </HBox>
-            <TextArea fx:id="txtRicetta" prefHeight="243.0" prefWidth="295.0" style="-fx-background-radius: 10; -fx-background-color: trtansparent;" />
+            <TextArea fx:id="txtRicetta" prefHeight="243.0" prefWidth="348.0" style="-fx-background-radius: 10; -fx-background-color: trtansparent;" />
          </children>
       </VBox>
    </children>

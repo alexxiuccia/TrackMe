@@ -29,20 +29,30 @@ import java.io.IOException;
 public class RecipesController implements Initializable {
 
 
-    @FXML
-    private Button btn1;
+		@FXML
+	    private Button btn1;
 
-    @FXML
-    private Button btn2;
+	    @FXML
+	    private Button btn2;
 
-    @FXML
-    private Button btn3;
+	    @FXML
+	    private Button btn3;
 
-    @FXML
-    private Text txtNomeRicetta;
+	    @FXML
+	    private Button btnSettings;
 
-    @FXML
-    private TextArea txtRicetta;
+	    @FXML
+	    private Button btnStats; 
+
+	    @FXML
+	    private Button diarybtn;
+
+	    @FXML
+	    private Text txtNomeRicetta;
+
+	    @FXML
+	    private TextArea txtRicetta;
+
     
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -55,7 +65,7 @@ public class RecipesController implements Initializable {
 					// String filePath = "/Ricetta1.txt";
 					String content;
 					// content = readFile(filePath);
-					InputStream inputStream = getClass().getResourceAsStream("/Ricetta1.txt");
+					InputStream inputStream = getClass().getResourceAsStream("Ricetta1.txt");
 					if (inputStream != null) {
 						BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 						String line;
@@ -121,24 +131,39 @@ public class RecipesController implements Initializable {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-        
-	            
-	           /* if(1==1)
-	            {
-	            	  Parent root;
-					try {
-						root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
-						 Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		            	  Scene scene = new Scene(root);
-		            	  stage.setScene(scene);
-		            	  stage.show();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-	            	 
-	            }*/
 	        });
+		 
+		 btnStats.setOnAction(event -> {
+			 
+			 
+			 
+			 try {
+					Parent root;
+					root = FXMLLoader.load(getClass().getResource("Stats.fxml"));
+					Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+					Scene scene = new Scene(root);
+					stage.setScene(scene);
+					stage.show();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}   	  
+	        });
+		 
+			diarybtn.setOnAction(event -> {
+
+				try {
+					Parent root;
+					root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+					Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+					Scene scene = new Scene(root);
+					stage.setScene(scene);
+					stage.show();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			});
 		 
 		 btn3.setOnAction(event -> {
 			 
@@ -180,6 +205,10 @@ public class RecipesController implements Initializable {
 	            	 
 	            }*/
 	        });
+		 
+		 
+		 
+		 
 		 
 		 
 		

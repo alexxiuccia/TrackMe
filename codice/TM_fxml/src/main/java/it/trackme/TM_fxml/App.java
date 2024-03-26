@@ -8,6 +8,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import it.trackme.jooq.generated.tables.records.UserRecord;
+
+
 
 /**
  * JavaFX App
@@ -31,9 +34,11 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }*/
+	
+	public static UserRecord utente = null;
 
     public static void main(String[] args) {
-        launch();
+        launch(); 
     }
 	
 	
@@ -43,7 +48,7 @@ public class App extends Application {
 	    
 	       try {
 	        	
-	        	 Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+	        	 Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
 	             Scene scene = new Scene(root);
 	             stage.setScene(scene);
 	             stage.show();

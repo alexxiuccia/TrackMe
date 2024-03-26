@@ -221,6 +221,7 @@ public class Controller implements Initializable {
 				txtFat.clear();
 				txtCarbs.clear();
 				txtProtein.clear();
+				txtFoodAmount.clear();
 			}
 			
 		});

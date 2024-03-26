@@ -50,6 +50,7 @@ public class StatsController implements Initializable {
 			//System.out.println(App.utente.getCalgoal().toString());
 			// Calcola la percentuale
 		    double percent = (double) current / goal;
+		    prog.setProgress(percent);
 		    
 		    btnRefresh.setOnAction(event -> {
 				try {

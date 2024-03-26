@@ -49,12 +49,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="222.0" layoutY="301.0" text=" Weight:">
+      <Label layoutX="222.0" layoutY="301.0" text=" Weight(Kg):">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="223.0" layoutY="336.0" text=" Height:">
+      <Label layoutX="223.0" layoutY="336.0" text=" Height(cm):">
          <font>
             <Font size="16.0" />
          </font>

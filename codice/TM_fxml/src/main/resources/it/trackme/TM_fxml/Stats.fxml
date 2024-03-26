@@ -26,8 +26,8 @@
                   <Font size="22.0" />
                </font>
             </Text>
-            <TextField fx:id="txtxGoal" layoutX="463.0" layoutY="34.0" prefHeight="25.0" prefWidth="79.0" />
-            <TextField fx:id="txtCurrent" layoutX="118.0" layoutY="34.0" prefHeight="25.0" prefWidth="78.0" />
+            <TextField fx:id="txtxGoal" editable="false" layoutX="463.0" layoutY="34.0" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txtCurrent" editable="false" layoutX="118.0" layoutY="34.0" prefHeight="25.0" prefWidth="78.0" />
          </children></Pane>
       <Button fx:id="btnRefresh" layoutX="540.0" layoutY="351.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="109.0" style="-fx-background-color: #0096ff;" text="Back to Diary" textFill="WHITE">
          <font>

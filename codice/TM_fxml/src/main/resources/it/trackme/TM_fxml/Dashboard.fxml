@@ -81,12 +81,12 @@
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="262.0" layoutY="438.0" prefHeight="21.0" prefWidth="81.0" text="Meal ">
+            <Label layoutX="249.0" layoutY="438.0" prefHeight="21.0" prefWidth="81.0" text="Meal ">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="249.0" layoutY="509.0" prefHeight="21.0" prefWidth="81.0" text="Amount:">
+            <Label layoutX="249.0" layoutY="509.0" prefHeight="21.0" prefWidth="81.0" text="Portion:">
                <font>
                   <Font size="15.0" />
                </font>
@@ -130,7 +130,7 @@
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="398.0" layoutY="119.0" prefHeight="21.0" prefWidth="81.0" text="Amount:">
+            <Label layoutX="398.0" layoutY="119.0" prefHeight="21.0" prefWidth="81.0" text="Amount(g):">
                <font>
                   <Font size="15.0" />
                </font>
@@ -138,7 +138,7 @@
             <TextField fx:id="txtAmount" layoutX="501.0" layoutY="116.0" prefHeight="27.0" prefWidth="174.0" promptText="type here" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0pc 0px 2px;" />
             <ComboBox fx:id="comboWhich" layoutX="337.0" layoutY="435.0" prefHeight="27.0" prefWidth="81.0" promptText="select" style="-fx-background-color: transparent; -fx-border-color: #0598FF;" />
             <ListView fx:id="listRecipes" layoutX="22.0" layoutY="418.0" prefHeight="122.0" prefWidth="206.0" />
-            <Label layoutX="29.0" layoutY="316.0" text="Amount">
+            <Label layoutX="29.0" layoutY="316.0" text="Amoun(g):t">
                <font>
                   <Font size="15.0" />
                </font>

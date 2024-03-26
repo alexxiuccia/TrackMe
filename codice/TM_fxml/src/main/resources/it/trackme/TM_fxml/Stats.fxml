@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.trackme.TM_fxml.StatsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.trackme.TM_fxml.StatsController">
    <children>
-      <Pane layoutX="71.0" layoutY="41.0" prefHeight="200.0" prefWidth="602.0" style="-fx-background-color: #c6e2f5;">
+      <Pane layoutX="283.0" layoutY="70.0" prefHeight="200.0" prefWidth="602.0" style="-fx-background-color: #c6e2f5; -fx-background-radius: 20;">
          <children>
-            <ProgressBar fx:id="prog" layoutX="186.0" layoutY="91.0" prefHeight="18.0" prefWidth="231.0" progress="0.0" />
-            <Text layoutX="36.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tot">
+            <ProgressBar fx:id="prog" layoutX="186.0" layoutY="132.0" prefHeight="18.0" prefWidth="231.0" progress="0.0" stylesheets="@Style.css" />
+            <Text fill="#0096ff" layoutX="353.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total goal:">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-            <Text layoutX="339.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curr">
+            <Text fill="#0096ff" layoutX="29.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current:">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-            <TextField fx:id="txtxGoal" layoutX="90.0" layoutY="33.0" />
-            <TextField fx:id="txtCurrent" layoutX="417.0" layoutY="33.0" />
+            <TextField fx:id="txtxGoal" layoutX="463.0" layoutY="34.0" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txtCurrent" layoutX="118.0" layoutY="34.0" prefHeight="25.0" prefWidth="78.0" />
          </children></Pane>
-      <Button fx:id="btnRefresh" layoutX="334.0" layoutY="319.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btnRefresh" layoutX="540.0" layoutY="351.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="109.0" style="-fx-background-color: #0096ff;" text="Back to Diary" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <VBox layoutY="-1.0" prefHeight="481.0" prefWidth="223.0" style="-fx-background-color: #0096ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="66.0" layoutY="130.0" size="115" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label layoutX="231.0" layoutY="14.0" text="Stats:" textFill="#0096ff">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

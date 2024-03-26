@@ -50,7 +50,7 @@ public class LoginController implements Initializable{
 	          //  GestisciUtente.accessoUtente()
 	            App.utente=GestisciUtente.accessoUtente(username, password);
 	            if(App.utente!=null) {
-	            	System.out.println(App.utente);
+	            	System.out.println(App.utente); 
 					try {
 						Parent root;
 						root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));

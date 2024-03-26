@@ -15,69 +15,53 @@
    <children>
       <VBox layoutY="-2.0" prefHeight="590.0" prefWidth="198.0" style="-fx-background-color: #0096ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane prefHeight="139.0" prefWidth="198.0">
+            <Pane prefHeight="233.0" prefWidth="198.0">
                <children>
-                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="64.0" layoutY="101.0" size="90" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="64.0" layoutY="205.0" size="90" wrappingWidth="70.71428680419922" />
                </children></Pane>
-            <Label prefHeight="17.0" prefWidth="200.0" text="   Recipes" textFill="WHITE">
-               <font>
-                  <Font size="37.0" />
-               </font>
-            </Label>
-            <Button fx:id="btnStats" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Stats" textFill="WHITE">
+            <Button fx:id="diarybtn" mnemonicParsing="false" prefHeight="67.0" prefWidth="198.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Diary" textFill="WHITE">
                <font>
                   <Font size="23.0" />
                </font>
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
-               </graphic>
-            </Button>
-            <Button fx:id="diarybtn" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Diary" textFill="WHITE">
-               <font>
-                  <Font size="23.0" />
-               </font>
-               <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="BOOK" />
-               </graphic>
-            </Button>
-            <Button fx:id="btnSettings" mnemonicParsing="false" prefHeight="67.0" prefWidth="286.0" style="-fx-background-color: #0096ff;" stylesheets="@Style.css" text="Settings" textFill="WHITE">
-               <font>
-                  <Font size="23.0" />
-               </font>
-               <graphic>
-                  <FontAwesomeIconView fill="WHITE" glyphName="GEAR" />
                </graphic>
             </Button>
          </children>
       </VBox>
-      <Button fx:id="btn1" layoutX="255.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" stylesheets="@Style.css" text="Ricetta 1" textFill="WHITE">
+      <Button fx:id="btn1" layoutX="292.0" layoutY="105.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" stylesheets="@Style.css" text="Ricetta 1" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btn2" layoutX="542.0" layoutY="32.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" stylesheets="@Style.css" text="Ricetta 2" textFill="WHITE">
+      <Button fx:id="btn2" layoutX="620.0" layoutY="105.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" stylesheets="@Style.css" text="Ricetta 2" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btn3" layoutX="395.0" layoutY="104.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="174.0" stylesheets="@Style.css" text="Ricetta 3" textFill="WHITE">
+      <Button fx:id="btn3" layoutX="456.0" layoutY="105.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="130.0" stylesheets="@Style.css" text="Ricetta 3" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
       <VBox layoutX="292.0" layoutY="172.0" prefHeight="376.0" prefWidth="395.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #0096ff; -fx-border-width: 2px;">
+            <HBox prefHeight="81.0" prefWidth="395.0" style="-fx-border-color: #0096ff; -fx-border-width: 2px;">
                <children>
-                  <Text fx:id="txtNomeRicetta" fill="#b9b0b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricetta:" textAlignment="CENTER" wrappingWidth="348.29296875">
+                  <Text fx:id="txtNomeRicetta" fill="#b9b0b0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ricetta del mese:" textAlignment="CENTER" wrappingWidth="453.29296875">
                      <font>
                         <Font size="37.0" />
                      </font>
                   </Text>
                </children>
             </HBox>
-            <TextArea fx:id="txtRicetta" prefHeight="243.0" prefWidth="348.0" style="-fx-background-radius: 10; -fx-background-color: trtansparent;" />
+            <TextArea fx:id="txtRicetta" prefHeight="327.0" prefWidth="395.0" style="-fx-background-radius: 10; -fx-background-color: trtansparent;" />
          </children>
       </VBox>
+      <Label layoutX="207.0" layoutY="14.0" prefHeight="71.0" prefWidth="198.0" text="Recipes:" textFill="#0096ff">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

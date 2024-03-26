@@ -36,13 +36,7 @@ public class RecipesController implements Initializable {
 	    private Button btn2;
 
 	    @FXML
-	    private Button btn3;
-
-	    @FXML
-	    private Button btnSettings;
-
-	    @FXML
-	    private Button btnStats; 
+	    private Button btn3;  
 
 	    @FXML
 	    private Button diarybtn;
@@ -62,6 +56,7 @@ public class RecipesController implements Initializable {
 			 
 			 
 				try {
+					txtRicetta.clear();
 					// String filePath = "/Ricetta1.txt";
 					String content;
 					// content = readFile(filePath);
@@ -78,13 +73,6 @@ public class RecipesController implements Initializable {
 						System.err.println("Impossibile trovare il file Ricetta1.txt");
 					}
 					
-					//Scanner scanner = new Scanner(filePath);
-					
-					/*while(scanner.hasNextLine())
-					{
-						//txtRicetta.setText(content);
-						txtRicetta.appendText(scanner.nextLine() + "\n");
-					}*/
 					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -92,21 +80,6 @@ public class RecipesController implements Initializable {
 				}
            
 	            
-	           /* if(1==1)
-	            {
-	            	  Parent root;
-					try {
-						root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
-						 Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		            	  Scene scene = new Scene(root);
-		            	  stage.setScene(scene);
-		            	  stage.show();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-	            	 
-	            }*/
 	        });
 		 
 		 btn2.setOnAction(event -> {
@@ -114,41 +87,32 @@ public class RecipesController implements Initializable {
 			 
 			 
 				try {
-					String filePath = "Ricetta1.txt"; 
+					txtRicetta.clear();
+					// String filePath = "/Ricetta1.txt";
 					String content;
-					content = readFile(filePath);
-					
-					
-					Scanner scanner = new Scanner(filePath);
-					
-					while(scanner.hasNextLine())
-					{
-						//txtRicetta.setText(content);
-						txtRicetta.appendText(scanner.nextLine() + "\n");
+					// content = readFile(filePath);
+					InputStream inputStream = getClass().getResourceAsStream("Ricetta2.txt");
+					if (inputStream != null) {
+						BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+						String line;
+						while ((line = reader.readLine()) != null) {
+							txtRicetta.appendText(line + "\n");
+							// System.out.println(line);
+						}
+						reader.close();
+					} else {
+						System.err.println("Impossibile trovare il file Ricetta1.txt");
 					}
+					
 					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+        
+	            
 	        });
 		 
-		 btnStats.setOnAction(event -> {
-			 
-			 
-			 
-			 try {
-					Parent root;
-					root = FXMLLoader.load(getClass().getResource("Stats.fxml"));
-					Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-					Scene scene = new Scene(root);
-					stage.setScene(scene);
-					stage.show();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}   	  
-	        });
 		 
 			diarybtn.setOnAction(event -> {
 
@@ -165,47 +129,32 @@ public class RecipesController implements Initializable {
 				}
 			});
 		 
-		 btn3.setOnAction(event -> {
-			 
-			 
-			 
+			btn3.setOnAction(event -> {
+
 				try {
-					String filePath = "Ricetta1.txt"; 
+					txtRicetta.clear();
+					// String filePath = "/Ricetta1.txt";
 					String content;
-					content = readFile(filePath);
-					
-					
-					Scanner scanner = new Scanner(filePath);
-					
-					while(scanner.hasNextLine())
-					{
-						//txtRicetta.setText(content);
-						txtRicetta.appendText(scanner.nextLine() + "\n");
+					// content = readFile(filePath);
+					InputStream inputStream = getClass().getResourceAsStream("Ricetta3.txt");
+					if (inputStream != null) {
+						BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+						String line;
+						while ((line = reader.readLine()) != null) {
+							txtRicetta.appendText(line + "\n");
+							// System.out.println(line);
+						}
+						reader.close();
+					} else {
+						System.err.println("Impossibile trovare il file Ricetta1.txt");
 					}
-					
+
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-        
-	            
-	           /* if(1==1)
-	            {
-	            	  Parent root;
-					try {
-						root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
-						 Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		            	  Scene scene = new Scene(root);
-		            	  stage.setScene(scene);
-		            	  stage.show();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-	            	 
-	            }*/
-	        });
-		 
+
+			});
 		 
 		 
 		 

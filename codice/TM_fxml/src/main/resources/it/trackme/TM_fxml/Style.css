@@ -12,3 +12,15 @@
 {
 	-fx-background-color: #0D466E;
 }
+
+.progress-bar {
+    -fx-accent: #2196F3; /* Colore principale della ProgressBar */
+}
+
+.progress-bar .track {
+    -fx-background-color: #E0E0E0; /* Colore di sfondo della ProgressBar */
+}
+
+.progress-bar .bar {
+    -fx-background-color: #2196F3; /* Colore della parte riempita della ProgressBar */
+}

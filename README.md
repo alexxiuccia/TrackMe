@@ -8,9 +8,9 @@ Progetto di Ingegneria del Software del corso di laurea triennale in Ingegneria 
 * De Vivo Massimo (1081227)
 * Simoni Nicole (1080570)
 
-Ecco le istruzioni in Markdown per eseguire l'applicativo JavaFX TrackMe:
+# **ISTRUZIONI**
 
-#ESECUZIONE DA TERMINALE
+## **ESECUZIONE DA TERMINALE**
 ### Passi per l'esecuzione di TrackMe:
 
 1. **Eseguire il progetto TM_db:**
@@ -37,10 +37,8 @@ Ecco le istruzioni in Markdown per eseguire l'applicativo JavaFX TrackMe:
 
 Una volta completati questi passaggi, l'applicativo TrackMe dovrebbe essere avviato correttamente. Assicurarsi di seguire l'ordine specificato per l'esecuzione dei progetti.
 
+## **ESECUZIONE TRAMITE ECLIPSE**
 Ecco i passaggi per eseguire l'applicativo JavaFX TrackMe utilizzando Eclipse:
-
-#ESECUZIONE TRAMITE ECLIPSE
-### Esecuzione tramite Eclipse:
 
 1. **Esegui il progetto TM_db:**
    - Importa il progetto TM_db in Eclipse:
